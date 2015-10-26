@@ -1,0 +1,46 @@
+-var devices={telephone1 : { name: 'Samsung GT-I9301I  GALAXY S 3', sim: 'Micro-sim', num_sim: '1', color : 'Белый', os: 'Android', g_3 : 'Есть', g_4 : 'Нет', gps: 'Есть', price: '4 990 г' },  telephone2 : { name: 'Microsoft Lumia 640 RM-1077', sim: 'Micro-sim', num_sim: '2', color : 'Белый', os: 'Windows Phone', g_3 : 'Есть', g_4 : 'Нет', gps: 'A-GPS' , price: '4 990 г'},  telephone3 : { name: 'Archos 50 Oxygen Plus', sim: 'Micro-sim', num_sim: '2', color : 'Серый', os: 'Android', g_3 : 'Есть', g_4 : 'Нет', gps: 'Есть', price: '4 990 г' },telephone4 : { name: 'Philips S398 Black', sim: 'Micro-sim', num_sim: '2', color : 'Серый', os: 'Android', g_3 : 'Есть', g_4 : 'Нет', gps: 'Есть', price: '4 990 г' },telephone5 : { name: 'Microsoft Lumia 430 RM-10', sim: 'Micro-sim', num_sim: '2', color : 'Черный', os: 'Windows Phone', g_3 : 'Есть', g_4 : 'Нет', gps: 'A-GPS', price: '4 990 г' },telephone6 : { name: 'Senseit L301 Black', sim: 'Micro-sim', num_sim: '2', color : 'Черный', os: 'Android', g_3 : 'Есть', g_4 : 'Нет', gps: 'Есть', price: '4 990 г' },telephone7 : { name: 'HIGHSCREEN WinWin Black', sim: 'Micro-sim', num_sim: '2', color : 'Черный', os: 'Android', g_3 : 'Есть', g_4 : 'Нет', gps: 'Есть', price: '4 990 г' },telephone8 : { name: 'Alcatel OT4013D PIXI 3 (2 SIM)', sim: 'Micro-sim', num_sim: '2', color : 'Белый', os: 'Android', g_3 : 'Есть', g_4 : 'Нет', gps: 'A-GPS', price: '4 990 г' },telephone9 : { name: 'Fly IQ434 Era Nano 5', sim: 'Micro-sim', num_sim: '2', color : 'Черный', os: 'Android', g_3 : 'Нет', g_4 : 'Нет', gps: 'Нет', price: '4 990 г' }};
+
+mixin device(devices)
+    -each dev in devices
+        .device
+            ul.device-image
+                li.device-image_main
+                    img(alt='main')
+                li.device-image
+                    img(alt='1')
+                li.device-image
+                    img(alt='2')
+                li.device-image
+                    img(alt='3')
+            ul= dev.name
+                li
+                    |Тип SIM-карты
+                    = dev.sim
+                li
+                    |Кол-во SIM-карт
+                    = dev.num_sim
+                li
+                    |Цвет
+                    = dev.color
+                li
+                    |OC
+                    = dev.os
+                li
+                    |Связь 3G
+                    = dev.g_3
+                li
+                    |4G(LTE)
+                    = dev.g_4
+                li
+                    |GPS-модуль
+                    = dev.gps
+            ul.rating
+                li.rating-star
+                li.rating-star
+                li.rating-star
+                li.rating-star
+                li.rating-star
+            .price= dev.price
+            .cart
+                .cart-status В наличии
+                button.cart-push В корзину

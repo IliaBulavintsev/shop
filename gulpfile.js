@@ -39,10 +39,10 @@ var paths = {
         },
 
         browserSync : {
-            baseDir : './',
-            watchPaths : ['*.html', 'css/*.css', 'js/*.js']
+            //baseDir : 'dist/',
+            watchPaths : ['*.html', 'dist/css/*.css', 'dist/js/*.js']
         }
-    }
+    };
 
 /* --------- jade --------- */
 gulp.task('jade', function() {

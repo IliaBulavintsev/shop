@@ -1,0 +1,32 @@
+-var items = ['Планшеты','Мобильные телефоны','MP3 плееры','Персональные компьютеры', 'Ноутбуки','Аксессуары','Бытовая техника'];
+-var header_items = ['Карта проездов','История Заказов','Корзина'];
+-var social_items=['vk','tw', 'fb'];
+-var adress_items=['Ул. Маяовская д6,офис 17','+7(913)123-12-13'];
+-var sidebar ={ first : {name:'Наличие в магазинах', items:['Во всех магазинах','В ближайшем ко мне магазине']}, second : {name:'Бренды', items:['Lenovo','Apple','Samsung','Asus','Motorolla','сбросить фильтр']}, third : {name:'Операционные Системы', items:['Android','iOS','Simbian','Custom','сбросить фильтр']}}
+-var category =['Флагман','Бюджетная линейка']
+
+
+mixin navigation(links)
+    ul
+        -each link in links
+            li
+                a(href='#')= link
+
+mixin social_ico(socials)
+    ul
+        -each social in socials
+            li
+                img(alt=social)
+
+
+mixin accardeon(cat)
+    ul
+        ul= cat.name
+            +accardeon_items(cat.items)
+
+mixin accardeon_items(items)
+    -each item in items
+        li
+            label
+                input(type="checkbox")
+                = item
