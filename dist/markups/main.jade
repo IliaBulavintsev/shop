@@ -5,64 +5,177 @@ html(lang='ru-RU')
     body
         .main-wrapper
             header.header
-                .header-wrapperico
-                    +social_ico(social_items)
-                .header-wrapperadress
-                    +navigation(adress_items)
-            nav.navigation-head
-                .navigation-head-logo
-                    img(alt='logo')
-                .navigation-head-search
-                    input(type='text', placeholder='Что будем искать?')
-                    button Искать
-                +navigation(header_items)
-            nav.navigation-menu
-                +navigation(items)
-            .central-wrapper
-                .sidebar
-                    .sidebar-cat
-                        +navigation(category)
-                    .sidebar-accordion
-                        ul
-                            +accardeon(sidebar.first)
-                            +accardeon(sidebar.second)
-                            ul Цены
-                                lable
-                                    |От
-                                    input.from(type="text")
-                                lable
-                                    |До
-                                    input.from(type="text")
-                            ul Цвет
-                                li цвет
-                                li цвет
-                                li цвет
-                                li цвет
-                                li цвет
-                                li цвет
-                                li цвет
-                                li цвет
-                                li цвет
-                                li цвет
-                                li цвет
-                                li цвет
-                            +accardeon(sidebar.third)
-                .content
-                    .content-view
-                        .content-view_left
-                            lable
-                                |Сортировать по цене
-                                select
+                .header_wrapper.clearfix
+                    .header-wrapperico.clearfix
+                       +social_ico_header(social_items)
+                    .header-wrapperadress.clearfix
+                        ul.adress
+                                li.adress-map.adress-common
+                                    a(href='#') Ул. Маяовская д6,офис 17
+                                li.adress-telephone.adress-common
+                                    a(href='#') +7(913)123-12-13
+            nav.navigation-head.clearfix
+                .navigation-head-logo.clearfix
+                    img(alt='logo', src='img/cooltech.png')
+                .navigation-head-search.clearfix
+                    input.navigation-head-search-input(type='text', placeholder='Что будем искать?')
+                    button.navigation-head-search-button Найти
+                .navigation-head-menu.clearfix
+                    ul.navigation-head-menu-items
+                        li.navigation-head-menu-item
+                            a(href='#') Карта проезда
+                        li.navigation-head-menu-item
+                            a(href='#') История Заказов
+                        li.navigation-head-menu-item
+                            a(href='#') Корзина
+            .wrapper-menu.clearfix
+                nav.navigation-menu.clearfix
+                    .navigation-menu-wrapper
+                        +navigation(items)
+
+            .central-wrapper.clearfix
+                .wrapper-menu-map
+                    span.wrapper-menu-map_main
+                        span.wrapper-menu-map_href Главная
+                        |&nbsp > &nbsp
+                    span.wrapper-menu-map_catalog
+                        span.wrapper-menu-map_href Каталог
+                .wrapper-menu-category Мобильные телефоны
+                .sidebar.clearfix
+                    .sidebar-cat.clearfix
+                        ul.sidebar-cat-items
+                            li.sidebar-cat-items-item
+                                a.sidebar-cat-items-item-link(href='#') Флагманы
+                            li.sidebar-cat-items-item
+                                a.sidebar-cat-items-item-link(href='#') Бюджетная линейка
+                    .sidebar-accordion.clearfix
+                        ul.accardion
+                            li.accardion-item
+                                a.accardion-item-trigger(href='#') Наличие в магазинах
+                                ul
+                                    li
+                                        lable
+                                            input(type='radio')
+                                            |Во всех магазинах
+                                    li
+                                        lable
+                                            input(type='radio')
+                                            |В ближайшем ко мне
+                            li.accardion-item
+                                a.accardion-item-trigger(href='#') Бренды
+                                ul.accardion-item-subitems
+                                    li.accardion-item-subitems-subitem
+                                        label
+                                            input(type="checkbox")
+                                            |Lenovo
+                                    li.accardion-item-subitems-subitem
+                                        label
+                                            input(type="checkbox")
+                                            |Apple
+                                    li.accardion-item-subitems-subitem
+                                        label
+                                            input(type="checkbox")
+                                            |Samsung
+                                    li.accardion-item-subitems-subitem
+                                        label
+                                            input(type="checkbox")
+                                            |Asus
+                                    li.accardion-item-subitems-subitem
+                                        label
+                                            input(type="checkbox")
+                                            |Motorola
+                                a.reset_filter(href='#') Сбросить фильтр
+
+                            li.accardion-item
+                                a.accardion-item-trigger(href='#') Цены
+                                lable.accardion-item-lable_choose
+                                    |от
+                                    input.accardion-item-from(type="text" value=100)
+                                lable.accardion-item-lable_choose
+                                    |до
+                                    input.accardion-item-to(type="text" value=5000)
+                            li.accardion-item
+                                a.accardion-item-trigger(href='#') Цвет
+                                ul.accardion-items-colorboxes
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_1
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_2
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_3
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_4
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_5
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_6
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_7
+                                    li.accardion-item-colorboxes
+                                       .colorbox.colorbox_8
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_9
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_10
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_11
+                                    li.accardion-item-colorboxes
+                                        .colorbox.colorbox_12
+
+                            li.accardion-item
+                                a.accardion-item-trigger(href='#') Операционная система
+                                ul.accardion-item-subitems
+                                    li.accardion-item-subitems-subitem
+                                        label
+                                            input(type="checkbox")
+                                            |Android
+                                    li.accardion-item-subitems-subitem
+                                        label
+                                            input(type="checkbox")
+                                            |iOS
+                                    li.accardion-item-subitems-subitem
+                                        label
+                                            input(type="checkbox")
+                                            |Windows Mobile
+                                    li.accardion-item-subitems-subitem
+                                        label
+                                            input(type="checkbox")
+                                            |Symbian
+                                    li.accardion-item-subitems-subitem
+                                        label
+                                            input(type="checkbox")
+                                            |Custom
+                                a.reset_filter(href='#') Сбросить фильтр
+
+
+                .content.clearfix
+                    .content-view.clearfix
+                        .content-view_left.clearfix
+                            lable.sort
+                                |Сортировать по
+                                select.sort-select
                                     option по цене
                                     option по названию
-                        .content-view_right
-                            ul Вид каталога
-                                li 1
-                                li 2
-                                li 3
-                    .content-items
+                        .content-view_right.clearfix
+                            .view-span.clearfix Вид каталога
+                            ul.content-view_right-items.clearfix
+                                li.content-view_right-item
+                                    .content-view_right-items-wrapperimage_1
+                                li.content-view_right-item
+                                    .content-view_right-items-wrapperimage_2
+                                li.content-view_right-item
+                                    .content-view_right-items-wrapperimage_3
+                    .content-items.clearfix
                         +device(devices)
-            .information
+                        include _page2
+                    .list-pages.clearfix
+                        ul.list-pages-items.clearfix
+                            li.list-pages-items-item
+                            li.list-pages-items-item 1
+                            li.list-pages-items-item 2
+                            li.list-pages-items-item 3
+                            li.list-pages-items-item
+            .information.clearfix
                 .information-left
                     | Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.
                     |Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
@@ -75,7 +188,7 @@ html(lang='ru-RU')
                 .footer-logowrapper
                     img(alt='logo')
                 .footer-rightwrapper
-                    +social_ico(social_items)
+                    +social_ico_header(social_items)
                     +navigation(items)
                 .footer-allright
                     |all right reserved

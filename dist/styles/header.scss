@@ -1,0 +1,42 @@
+.header{
+  background-color: #FFFFFF;
+  min-width: 100%;
+  height: 77px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  .header_wrapper{
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+  }
+  .header-wrapperadress{
+    float: right;
+  }
+  .header-wrapperico{
+    float: left;
+  }
+}
+.social{
+  padding: 0;
+  margin: 0;
+}
+.social-items{
+  display: inline-block;
+  margin-right: 15px;
+}
+.adress{
+  padding: 0;
+  margin: 0;
+}
+.adress-map{
+  background: url("../img/map-pin.png") no-repeat;
+  padding-left: 20px;
+  margin-right: 86px;
+}
+.adress-telephone{
+  background: url("../img/telephone.png") no-repeat;
+  padding-left: 20px;
+}
+.adress-common{
+  display: inline-block;
+}

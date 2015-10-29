@@ -13,8 +13,7 @@
 		<meta name="author" content="author Name here"/>
 		<!-- CSS-->
 		<link rel="stylesheet" href="dist/bower/normalize-css/normalize.css"/>&#x9;&#x9;
-		<!--link(rel='stylesheet', href='css/main.css')-->
-		<!--| &#x9;&#x9;-->
+		<link rel="stylesheet" href="css/main.css"/>&#x9;&#x9;
 		<!-- JS modernizer-->
 		<!--if lt IE 9script(src='bower/html5shiv/dist/html5shiv.js')
 		-->
@@ -22,490 +21,976 @@
 	<body>
 		<div class="main-wrapper">
 			<header class="header">
-				<div class="header-wrapperico">
-					<ul>
-						<li><img alt="vk"/></li>
-						<li><img alt="tw"/></li>
-						<li><img alt="fb"/></li>
-					</ul>
-				</div>
-				<div class="header-wrapperadress">
-					<ul>
-						<li><a href="#">Ул. Маяовская д6,офис 17</a></li>
-						<li><a href="#">+7(913)123-12-13</a></li>
-					</ul>
-				</div>
-			</header>
-			<nav class="navigation-head">
-				<div class="navigation-head-logo"><img alt="logo"/></div>
-				<div class="navigation-head-search">
-					<input type="text" placeholder="Что будем искать?"/>
-					<button>Искать</button>
-				</div>
-				<ul>
-					<li><a href="#">Карта проездов</a></li>
-					<li><a href="#">История Заказов</a></li>
-					<li><a href="#">Корзина</a></li>
-				</ul>
-			</nav>
-			<nav class="navigation-menu">
-				<ul>
-					<li><a href="#">Планшеты</a></li>
-					<li><a href="#">Мобильные телефоны</a></li>
-					<li><a href="#">MP3 плееры</a></li>
-					<li><a href="#">Персональные компьютеры</a></li>
-					<li><a href="#">Ноутбуки</a></li>
-					<li><a href="#">Аксессуары</a></li>
-					<li><a href="#">Бытовая техника</a></li>
-				</ul>
-			</nav>
-			<div class="central-wrapper">
-				<div class="sidebar">
-					<div class="sidebar-cat">
-						<ul>
-							<li><a href="#">Флагман</a></li>
-							<li><a href="#">Бюджетная линейка</a></li>
+				<div class="header_wrapper clearfix">
+					<div class="header-wrapperico clearfix">
+						<ul class="social">
+							<li class="social-items"><a href="#"><img alt="vk" src="img/vk.png"/></a></li>
+							<li class="social-items"><a href="#"><img alt="tw" src="img/tw.png"/></a></li>
+							<li class="social-items"><a href="#"><img alt="fb" src="img/fb.png"/></a></li>
 						</ul>
 					</div>
-					<div class="sidebar-accordion">
-						<ul>
-							<ul>
-								<ul>Наличие в магазинах
+					<div class="header-wrapperadress clearfix">
+						<ul class="adress">
+							<li class="adress-map adress-common"><a href="#">Ул. Маяовская д6,офис 17</a></li>
+							<li class="adress-telephone adress-common"><a href="#">+7(913)123-12-13</a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<nav class="navigation-head clearfix">
+				<div class="navigation-head-logo clearfix"><img alt="logo" src="img/cooltech.png"/></div>
+				<div class="navigation-head-search clearfix">
+					<input type="text" placeholder="Что будем искать?" class="navigation-head-search-input"/>
+					<button class="navigation-head-search-button">Найти</button>
+				</div>
+				<div class="navigation-head-menu clearfix">
+					<ul class="navigation-head-menu-items">
+						<li class="navigation-head-menu-item"><a href="#">Карта проезда</a></li>
+						<li class="navigation-head-menu-item"><a href="#">История Заказов</a></li>
+						<li class="navigation-head-menu-item"><a href="#">Корзина</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="wrapper-menu clearfix">
+				<nav class="navigation-menu clearfix">
+					<div class="navigation-menu-wrapper">
+						<ul class="navigation-menu-items clearfix"><a href="#" class="navigation-menu-items-link">
+								<li class="navigation-menu-items-item">Планшеты</li></a><a href="#" class="navigation-menu-items-link">
+								<li class="navigation-menu-items-item navigation-menu-items-item_active">Мобильные телефоны</li></a><a href="#" class="navigation-menu-items-link">
+								<li class="navigation-menu-items-item">MP3 плееры</li></a><a href="#" class="navigation-menu-items-link">
+								<li class="navigation-menu-items-item">Персональные компьютеры</li></a><a href="#" class="navigation-menu-items-link">
+								<li class="navigation-menu-items-item">Ноутбуки</li></a><a href="#" class="navigation-menu-items-link">
+								<li class="navigation-menu-items-item">Аксессуары</li></a><a href="#" class="navigation-menu-items-link">
+								<li class="navigation-menu-items-item">Бытовая техника</li></a>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="central-wrapper clearfix">
+				<div class="wrapper-menu-map"><span class="wrapper-menu-map_main"><span class="wrapper-menu-map_href">Главная</span>&nbsp > &nbsp</span><span class="wrapper-menu-map_catalog"><span class="wrapper-menu-map_href">Каталог</span></span></div>
+				<div class="wrapper-menu-category">Мобильные телефоны</div>
+				<div class="sidebar clearfix">
+					<div class="sidebar-cat clearfix">
+						<ul class="sidebar-cat-items">
+							<li class="sidebar-cat-items-item"><a href="#" class="sidebar-cat-items-item-link">Флагманы</a></li>
+							<li class="sidebar-cat-items-item"><a href="#" class="sidebar-cat-items-item-link">Бюджетная линейка</a></li>
+						</ul>
+					</div>
+					<div class="sidebar-accordion clearfix">
+						<ul class="accardion">
+							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Наличие в магазинах</a>
+								<ul>
 									<li>
-										<label>
-											<input type="checkbox"/>Во всех магазинах
-										</label>
+										<lable>
+											<input type="radio"/>Во всех магазинах
+										</lable>
 									</li>
 									<li>
-										<label>
-											<input type="checkbox"/>В ближайшем ко мне магазине
-										</label>
-									</li></ul>
-							</ul>
-							<ul>
-								<ul>Бренды
-									<li>
+										<lable>
+											<input type="radio"/>В ближайшем ко мне
+										</lable>
+									</li>
+								</ul>
+							</li>
+							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Бренды</a>
+								<ul class="accardion-item-subitems">
+									<li class="accardion-item-subitems-subitem">
 										<label>
 											<input type="checkbox"/>Lenovo
 										</label>
 									</li>
-									<li>
+									<li class="accardion-item-subitems-subitem">
 										<label>
 											<input type="checkbox"/>Apple
 										</label>
 									</li>
-									<li>
+									<li class="accardion-item-subitems-subitem">
 										<label>
 											<input type="checkbox"/>Samsung
 										</label>
 									</li>
-									<li>
+									<li class="accardion-item-subitems-subitem">
 										<label>
 											<input type="checkbox"/>Asus
 										</label>
 									</li>
-									<li>
+									<li class="accardion-item-subitems-subitem">
 										<label>
-											<input type="checkbox"/>Motorolla
+											<input type="checkbox"/>Motorola
 										</label>
 									</li>
-									<li>
-										<label>
-											<input type="checkbox"/>сбросить фильтр
-										</label>
-									</li></ul>
-							</ul>
-							<ul>Цены
-								<lable>От
-									<input type="text" class="from"/>
+								</ul><a href="#" class="reset_filter">Сбросить фильтр</a>
+							</li>
+							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Цены</a>
+								<lable class="accardion-item-lable_choose">от
+									<input type="text" value="100" class="accardion-item-from"/>
 								</lable>
-								<lable>До
-									<input type="text" class="from"/>
+								<lable class="accardion-item-lable_choose">до
+									<input type="text" value="5000" class="accardion-item-to"/>
 								</lable>
-							</ul>
-							<ul>Цвет
-								<li>цвет</li>
-								<li>цвет</li>
-								<li>цвет</li>
-								<li>цвет</li>
-								<li>цвет</li>
-								<li>цвет</li>
-								<li>цвет</li>
-								<li>цвет</li>
-								<li>цвет</li>
-								<li>цвет</li>
-								<li>цвет</li>
-								<li>цвет</li>
-							</ul>
-							<ul>
-								<ul>Операционные Системы
-									<li>
+							</li>
+							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Цвет</a>
+								<ul class="accardion-items-colorboxes">
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_1"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_2"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_3"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_4"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_5"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_6"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_7"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_8"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_9"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_10"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_11"></div>
+									</li>
+									<li class="accardion-item-colorboxes">
+										<div class="colorbox colorbox_12"></div>
+									</li>
+								</ul>
+							</li>
+							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Операционная система</a>
+								<ul class="accardion-item-subitems">
+									<li class="accardion-item-subitems-subitem">
 										<label>
 											<input type="checkbox"/>Android
 										</label>
 									</li>
-									<li>
+									<li class="accardion-item-subitems-subitem">
 										<label>
 											<input type="checkbox"/>iOS
 										</label>
 									</li>
-									<li>
+									<li class="accardion-item-subitems-subitem">
 										<label>
-											<input type="checkbox"/>Simbian
+											<input type="checkbox"/>Windows Mobile
 										</label>
 									</li>
-									<li>
+									<li class="accardion-item-subitems-subitem">
+										<label>
+											<input type="checkbox"/>Symbian
+										</label>
+									</li>
+									<li class="accardion-item-subitems-subitem">
 										<label>
 											<input type="checkbox"/>Custom
 										</label>
 									</li>
-									<li>
-										<label>
-											<input type="checkbox"/>сбросить фильтр
-										</label>
-									</li></ul>
-							</ul>
+								</ul><a href="#" class="reset_filter">Сбросить фильтр</a>
+							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="content">
-					<div class="content-view">
-						<div class="content-view_left">
-							<lable>Сортировать по цене
-								<select>
+				<div class="content clearfix">
+					<div class="content-view clearfix">
+						<div class="content-view_left clearfix">
+							<lable class="sort">Сортировать по
+								<select class="sort-select">
 									<option>по цене</option>
 									<option>по названию</option>
 								</select>
 							</lable>
 						</div>
-						<div class="content-view_right">
-							<ul>Вид каталога
-								<li>1</li>
-								<li>2</li>
-								<li>3</li>
+						<div class="content-view_right clearfix">
+							<div class="view-span clearfix">Вид каталога</div>
+							<ul class="content-view_right-items clearfix">
+								<li class="content-view_right-item">
+									<div class="content-view_right-items-wrapperimage_1"></div>
+								</li>
+								<li class="content-view_right-item">
+									<div class="content-view_right-items-wrapperimage_2"></div>
+								</li>
+								<li class="content-view_right-item">
+									<div class="content-view_right-items-wrapperimage_3"></div>
+								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="content-items">
-						<div class="device">
-							<ul class="device-image">
-								<li class="device-image_main"><img alt="main"/></li>
-								<li class="device-image"><img alt="1"/></li>
-								<li class="device-image"><img alt="2"/></li>
-								<li class="device-image"><img alt="3"/></li>
-							</ul>
-							<ul>Samsung GT-I9301I  GALAXY S 3
-								<li>Тип SIM-картыMicro-sim
-								</li>
-								<li>Кол-во SIM-карт1
-								</li>
-								<li>ЦветБелый
-								</li>
-								<li>OCAndroid
-								</li>
-								<li>Связь 3GЕсть
-								</li>
-								<li>4G(LTE)Нет
-								</li>
-								<li>GPS-модульЕсть
-								</li></ul>
-							<ul class="rating">
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-							</ul>
-							<div class="price">4 990 г</div>
-							<div class="cart">
-								<div class="cart-status">В наличии</div>
-								<button class="cart-push">В корзину</button>
-							</div>
-						</div>
-						<div class="device">
-							<ul class="device-image">
-								<li class="device-image_main"><img alt="main"/></li>
-								<li class="device-image"><img alt="1"/></li>
-								<li class="device-image"><img alt="2"/></li>
-								<li class="device-image"><img alt="3"/></li>
-							</ul>
-							<ul>Microsoft Lumia 640 RM-1077
-								<li>Тип SIM-картыMicro-sim
-								</li>
-								<li>Кол-во SIM-карт2
-								</li>
-								<li>ЦветБелый
-								</li>
-								<li>OCWindows Phone
-								</li>
-								<li>Связь 3GЕсть
-								</li>
-								<li>4G(LTE)Нет
-								</li>
-								<li>GPS-модульA-GPS
-								</li></ul>
-							<ul class="rating">
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-							</ul>
-							<div class="price">4 990 г</div>
-							<div class="cart">
-								<div class="cart-status">В наличии</div>
-								<button class="cart-push">В корзину</button>
-							</div>
-						</div>
-						<div class="device">
-							<ul class="device-image">
-								<li class="device-image_main"><img alt="main"/></li>
-								<li class="device-image"><img alt="1"/></li>
-								<li class="device-image"><img alt="2"/></li>
-								<li class="device-image"><img alt="3"/></li>
-							</ul>
-							<ul>Archos 50 Oxygen Plus
-								<li>Тип SIM-картыMicro-sim
-								</li>
-								<li>Кол-во SIM-карт2
-								</li>
-								<li>ЦветСерый
-								</li>
-								<li>OCAndroid
-								</li>
-								<li>Связь 3GЕсть
-								</li>
-								<li>4G(LTE)Нет
-								</li>
-								<li>GPS-модульЕсть
-								</li></ul>
-							<ul class="rating">
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-							</ul>
-							<div class="price">4 990 г</div>
-							<div class="cart">
-								<div class="cart-status">В наличии</div>
-								<button class="cart-push">В корзину</button>
-							</div>
-						</div>
-						<div class="device">
-							<ul class="device-image">
-								<li class="device-image_main"><img alt="main"/></li>
-								<li class="device-image"><img alt="1"/></li>
-								<li class="device-image"><img alt="2"/></li>
-								<li class="device-image"><img alt="3"/></li>
-							</ul>
-							<ul>Philips S398 Black
-								<li>Тип SIM-картыMicro-sim
-								</li>
-								<li>Кол-во SIM-карт2
-								</li>
-								<li>ЦветСерый
-								</li>
-								<li>OCAndroid
-								</li>
-								<li>Связь 3GЕсть
-								</li>
-								<li>4G(LTE)Нет
-								</li>
-								<li>GPS-модульЕсть
-								</li></ul>
-							<ul class="rating">
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-							</ul>
-							<div class="price">4 990 г</div>
-							<div class="cart">
-								<div class="cart-status">В наличии</div>
-								<button class="cart-push">В корзину</button>
-							</div>
-						</div>
-						<div class="device">
-							<ul class="device-image">
-								<li class="device-image_main"><img alt="main"/></li>
-								<li class="device-image"><img alt="1"/></li>
-								<li class="device-image"><img alt="2"/></li>
-								<li class="device-image"><img alt="3"/></li>
-							</ul>
-							<ul>Microsoft Lumia 430 RM-10
-								<li>Тип SIM-картыMicro-sim
-								</li>
-								<li>Кол-во SIM-карт2
-								</li>
-								<li>ЦветЧерный
-								</li>
-								<li>OCWindows Phone
-								</li>
-								<li>Связь 3GЕсть
-								</li>
-								<li>4G(LTE)Нет
-								</li>
-								<li>GPS-модульA-GPS
-								</li></ul>
-							<ul class="rating">
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-							</ul>
-							<div class="price">4 990 г</div>
-							<div class="cart">
-								<div class="cart-status">В наличии</div>
-								<button class="cart-push">В корзину</button>
-							</div>
-						</div>
-						<div class="device">
-							<ul class="device-image">
-								<li class="device-image_main"><img alt="main"/></li>
-								<li class="device-image"><img alt="1"/></li>
-								<li class="device-image"><img alt="2"/></li>
-								<li class="device-image"><img alt="3"/></li>
-							</ul>
-							<ul>Senseit L301 Black
-								<li>Тип SIM-картыMicro-sim
-								</li>
-								<li>Кол-во SIM-карт2
-								</li>
-								<li>ЦветЧерный
-								</li>
-								<li>OCAndroid
-								</li>
-								<li>Связь 3GЕсть
-								</li>
-								<li>4G(LTE)Нет
-								</li>
-								<li>GPS-модульЕсть
-								</li></ul>
-							<ul class="rating">
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-							</ul>
-							<div class="price">4 990 г</div>
-							<div class="cart">
-								<div class="cart-status">В наличии</div>
-								<button class="cart-push">В корзину</button>
-							</div>
-						</div>
-						<div class="device">
-							<ul class="device-image">
-								<li class="device-image_main"><img alt="main"/></li>
-								<li class="device-image"><img alt="1"/></li>
-								<li class="device-image"><img alt="2"/></li>
-								<li class="device-image"><img alt="3"/></li>
-							</ul>
-							<ul>HIGHSCREEN WinWin Black
-								<li>Тип SIM-картыMicro-sim
-								</li>
-								<li>Кол-во SIM-карт2
-								</li>
-								<li>ЦветЧерный
-								</li>
-								<li>OCAndroid
-								</li>
-								<li>Связь 3GЕсть
-								</li>
-								<li>4G(LTE)Нет
-								</li>
-								<li>GPS-модульЕсть
-								</li></ul>
-							<ul class="rating">
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-							</ul>
-							<div class="price">4 990 г</div>
-							<div class="cart">
-								<div class="cart-status">В наличии</div>
-								<button class="cart-push">В корзину</button>
-							</div>
-						</div>
-						<div class="device">
-							<ul class="device-image">
-								<li class="device-image_main"><img alt="main"/></li>
-								<li class="device-image"><img alt="1"/></li>
-								<li class="device-image"><img alt="2"/></li>
-								<li class="device-image"><img alt="3"/></li>
-							</ul>
-							<ul>Alcatel OT4013D PIXI 3 (2 SIM)
-								<li>Тип SIM-картыMicro-sim
-								</li>
-								<li>Кол-во SIM-карт2
-								</li>
-								<li>ЦветБелый
-								</li>
-								<li>OCAndroid
-								</li>
-								<li>Связь 3GЕсть
-								</li>
-								<li>4G(LTE)Нет
-								</li>
-								<li>GPS-модульA-GPS
-								</li></ul>
-							<ul class="rating">
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-							</ul>
-							<div class="price">4 990 г</div>
-							<div class="cart">
-								<div class="cart-status">В наличии</div>
-								<button class="cart-push">В корзину</button>
-							</div>
-						</div>
-						<div class="device">
-							<ul class="device-image">
-								<li class="device-image_main"><img alt="main"/></li>
-								<li class="device-image"><img alt="1"/></li>
-								<li class="device-image"><img alt="2"/></li>
-								<li class="device-image"><img alt="3"/></li>
-							</ul>
-							<ul>Fly IQ434 Era Nano 5
-								<li>Тип SIM-картыMicro-sim
-								</li>
-								<li>Кол-во SIM-карт2
-								</li>
-								<li>ЦветЧерный
-								</li>
-								<li>OCAndroid
-								</li>
-								<li>Связь 3GНет
-								</li>
-								<li>4G(LTE)Нет
-								</li>
-								<li>GPS-модульНет
-								</li></ul>
-							<ul class="rating">
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-								<li class="rating-star"></li>
-							</ul>
-							<div class="price">4 990 г</div>
-							<div class="cart">
-								<div class="cart-status">В наличии</div>
-								<button class="cart-push">В корзину</button>
-							</div>
-						</div>
+					<div class="content-items clearfix">
+						<ul class="device-items clearfix">
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Samsung GT-I9301I  GALAXY S 3</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">1</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Белый</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Microsoft Lumia 640 RM-1077</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Белый</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Windows Phone</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">A-GPS</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Archos 50 Oxygen Plus</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Серый</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Philips S398 Black</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Серый</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Microsoft Lumia 430 RM-10</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Windows Phone</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">A-GPS</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Senseit L301 Black</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">HIGHSCREEN WinWin Black</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Alcatel OT4013D PIXI 3 (2 SIM)</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Белый</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">A-GPS</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Fly IQ434 Era Nano 5</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="page2-items">
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+							<li class="page2-items-item clearfix">
+								<ul class="page2-items-coloms">
+									<li class="pages2-items-item pages2-items-item_leftcol clearfix">
+										<ul class="page2-imgs clearfix">
+											<li class="page2-imgs-img page2-imgs-img_main"></li>
+											<li class="page2-imgs-img device-image-item_1"></li>
+											<li class="page2-imgs-img device-image-item_2"></li>
+											<li class="page2-imgs-img device-image-item_3"></li>
+										</ul>
+										<div class="page2-article clearfix"><span class="page2-article-text">Артикул &nbsp</span><span class="page2-article-number">12345</span></div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_centralcol clearfix">
+										<div class="page2-name">Samsung GT-I9301I GALAXY S 3</div>
+										<div class="page2-characters">
+											Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+											Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...
+										</div>
+										<div class="page2-device-rating-wrapper clearfix">
+											<ul class="page2-device-rating clearfix">
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star"></li>
+												<li class="page2-rating-star page2-rating-star_off"></li>
+											</ul>
+											<div class="page2-device-rating_number clearfix">4</div>
+										</div>
+									</li>
+									<li class="pages2-items-item pages2-items-item_rightcol clearfix">
+										<div class="page2-price clearfix">1229 P</div>
+										<button class="page2-button">В корзину</button>
+										<div class="page2-status">В наличии</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="list-pages clearfix">
+						<ul class="list-pages-items clearfix">
+							<li class="list-pages-items-item"></li>
+							<li class="list-pages-items-item">1</li>
+							<li class="list-pages-items-item">2</li>
+							<li class="list-pages-items-item">3</li>
+							<li class="list-pages-items-item"></li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="information">
+			<div class="information clearfix">
 				<div class="information-left">
 					Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.
 					Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
@@ -520,19 +1005,19 @@
 			<footer class="footer">
 				<div class="footer-logowrapper"><img alt="logo"/></div>
 				<div class="footer-rightwrapper">
-					<ul>
-						<li><img alt="vk"/></li>
-						<li><img alt="tw"/></li>
-						<li><img alt="fb"/></li>
+					<ul class="social">
+						<li class="social-items"><a href="#"><img alt="vk" src="img/vk.png"/></a></li>
+						<li class="social-items"><a href="#"><img alt="tw" src="img/tw.png"/></a></li>
+						<li class="social-items"><a href="#"><img alt="fb" src="img/fb.png"/></a></li>
 					</ul>
-					<ul>
-						<li><a href="#">Планшеты</a></li>
-						<li><a href="#">Мобильные телефоны</a></li>
-						<li><a href="#">MP3 плееры</a></li>
-						<li><a href="#">Персональные компьютеры</a></li>
-						<li><a href="#">Ноутбуки</a></li>
-						<li><a href="#">Аксессуары</a></li>
-						<li><a href="#">Бытовая техника</a></li>
+					<ul class="navigation-menu-items clearfix"><a href="#" class="navigation-menu-items-link">
+							<li class="navigation-menu-items-item">Планшеты</li></a><a href="#" class="navigation-menu-items-link">
+							<li class="navigation-menu-items-item navigation-menu-items-item_active">Мобильные телефоны</li></a><a href="#" class="navigation-menu-items-link">
+							<li class="navigation-menu-items-item">MP3 плееры</li></a><a href="#" class="navigation-menu-items-link">
+							<li class="navigation-menu-items-item">Персональные компьютеры</li></a><a href="#" class="navigation-menu-items-link">
+							<li class="navigation-menu-items-item">Ноутбуки</li></a><a href="#" class="navigation-menu-items-link">
+							<li class="navigation-menu-items-item">Аксессуары</li></a><a href="#" class="navigation-menu-items-link">
+							<li class="navigation-menu-items-item">Бытовая техника</li></a>
 					</ul>
 				</div>
 				<div class="footer-allright">all right reserved</div>

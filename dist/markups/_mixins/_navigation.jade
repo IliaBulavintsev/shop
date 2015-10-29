@@ -7,16 +7,21 @@
 
 
 mixin navigation(links)
-    ul
+    ul.navigation-menu-items.clearfix
         -each link in links
-            li
-                a(href='#')= link
+            a.navigation-menu-items-link(href='#')
+                -if (link ==='Мобильные телефоны')
+                    li.navigation-menu-items-item.navigation-menu-items-item_active= link
+                -else
+                    li.navigation-menu-items-item= link
 
-mixin social_ico(socials)
-    ul
+
+mixin social_ico_header(socials)
+    ul.social
         -each social in socials
-            li
-                img(alt=social)
+            li.social-items
+                a(href='#')
+                    img(alt=social, src='img/'+social+'.png')
 
 
 mixin accardeon(cat)
