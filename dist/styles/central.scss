@@ -144,7 +144,15 @@
   background-color: rgb(255, 255, 255);
   width: 35px;
   height: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:hover {
+    border-width: 2.5px;
+    border-color: rgb(255, 102, 0);
+    border-style: solid;
+    border-radius: 2px;
 
+  }
 }
 .colorbox_1{
   background-color: #FFFFFF;
@@ -261,4 +269,13 @@
 }
 .content-items{
   margin-bottom: 45px;
+}
+.geos{
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+}
+.geo{
+  list-style: none;
+  margin-bottom: 19px;
 }

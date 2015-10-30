@@ -157,6 +157,14 @@
   background-color: white;
   width: 35px;
   height: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.colorbox:hover {
+  border-width: 2.5px;
+  border-color: #ff6600;
+  border-style: solid;
+  border-radius: 2px;
 }
 
 .colorbox_1 {
@@ -293,4 +301,15 @@
 
 .content-items {
   margin-bottom: 45px;
+}
+
+.geos {
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.geo {
+  list-style: none;
+  margin-bottom: 19px;
 }

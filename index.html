@@ -80,45 +80,38 @@
 					<div class="sidebar-accordion clearfix">
 						<ul class="accardion">
 							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Наличие в магазинах</a>
-								<ul>
-									<li>
-										<lable>
-											<input type="radio"/>Во всех магазинах
-										</lable>
+								<ul class="geos">
+									<li class="geo">
+										<input id="all" type="radio" name="geolocation" checked="checked" class="radio-elem"/>
+										<label for="all" class="radio-lable">Во всех магазинах</label>
 									</li>
-									<li>
-										<lable>
-											<input type="radio"/>В ближайшем ко мне
-										</lable>
+									<li class="geo">
+										<input id="here" type="radio" name="geolocation" class="radio-elem"/>
+										<label for="here" class="radio-lable">В ближайшем ко мне магазине</label>
 									</li>
 								</ul>
 							</li>
 							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Бренды</a>
 								<ul class="accardion-item-subitems">
 									<li class="accardion-item-subitems-subitem">
-										<label>
-											<input type="checkbox"/>Lenovo
-										</label>
+										<input id="lenovo" type="checkbox" name="brand" class="checkbox-elem"/>
+										<label for="lenovo" class="checkbox-lable">Lenovo</label>
 									</li>
 									<li class="accardion-item-subitems-subitem">
-										<label>
-											<input type="checkbox"/>Apple
-										</label>
+										<input id="apple" type="checkbox" name="brand" class="checkbox-elem"/>
+										<label for="apple" class="checkbox-lable">Apple</label>
 									</li>
 									<li class="accardion-item-subitems-subitem">
-										<label>
-											<input type="checkbox"/>Samsung
-										</label>
+										<input id="samsung" type="checkbox" name="brand" class="checkbox-elem"/>
+										<label for="samsung" class="checkbox-lable">Samsung</label>
 									</li>
 									<li class="accardion-item-subitems-subitem">
-										<label>
-											<input type="checkbox"/>Asus
-										</label>
+										<input id="asus" type="checkbox" name="brand" class="checkbox-elem"/>
+										<label for="asus" class="checkbox-lable">Asus</label>
 									</li>
 									<li class="accardion-item-subitems-subitem">
-										<label>
-											<input type="checkbox"/>Motorola
-										</label>
+										<input id="motorola" type="checkbox" name="brand" class="checkbox-elem"/>
+										<label for="motorola" class="checkbox-lable">Motorola</label>
 									</li>
 								</ul><a href="#" class="reset_filter">Сбросить фильтр</a>
 							</li>
@@ -173,29 +166,24 @@
 							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Операционная система</a>
 								<ul class="accardion-item-subitems">
 									<li class="accardion-item-subitems-subitem">
-										<label>
-											<input type="checkbox"/>Android
-										</label>
+										<input id="android" type="checkbox" name="operating-system" class="checkbox-elem"/>
+										<label for="android" class="checkbox-lable">Android</label>
 									</li>
 									<li class="accardion-item-subitems-subitem">
-										<label>
-											<input type="checkbox"/>iOS
-										</label>
+										<input id="ios" type="checkbox" name="operating-system" class="checkbox-elem"/>
+										<label for="ios" class="checkbox-lable">iOS</label>
 									</li>
 									<li class="accardion-item-subitems-subitem">
-										<label>
-											<input type="checkbox"/>Windows Mobile
-										</label>
+										<input id="win" type="checkbox" name="operating-system" class="checkbox-elem"/>
+										<label for="win" class="checkbox-lable">Windows Mobile</label>
 									</li>
 									<li class="accardion-item-subitems-subitem">
-										<label>
-											<input type="checkbox"/>Symbian
-										</label>
+										<input id="symbian" type="checkbox" name="operating-system" class="checkbox-elem"/>
+										<label for="symbian" class="checkbox-lable">Symbian</label>
 									</li>
 									<li class="accardion-item-subitems-subitem">
-										<label>
-											<input type="checkbox"/>Custom
-										</label>
+										<input id="custom" type="checkbox" name="operating-system" class="checkbox-elem"/>
+										<label for="custom" class="checkbox-lable">Custom</label>
 									</li>
 								</ul><a href="#" class="reset_filter">Сбросить фильтр</a>
 							</li>

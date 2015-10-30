@@ -65,38 +65,31 @@ html(lang='ru-RU')
                         ul.accardion
                             li.accardion-item
                                 a.accardion-item-trigger(href='#') Наличие в магазинах
-                                ul
-                                    li
-                                        lable
-                                            input(type='radio')
-                                            |Во всех магазинах
-                                    li
-                                        lable
-                                            input(type='radio')
-                                            |В ближайшем ко мне
+                                ul.geos
+                                    li.geo
+                                        input.radio-elem#all(type='radio' name='geolocation' checked="checked")
+                                        label.radio-lable(for='all') Во всех магазинах
+                                    li.geo
+                                        input.radio-elem#here(type='radio' name='geolocation')
+                                        label.radio-lable(for='here') В ближайшем ко мне магазине
                             li.accardion-item
                                 a.accardion-item-trigger(href='#') Бренды
                                 ul.accardion-item-subitems
                                     li.accardion-item-subitems-subitem
-                                        label
-                                            input(type="checkbox")
-                                            |Lenovo
+                                        input.checkbox-elem#lenovo(type='checkbox' name='brand')
+                                        label.checkbox-lable(for='lenovo') Lenovo
                                     li.accardion-item-subitems-subitem
-                                        label
-                                            input(type="checkbox")
-                                            |Apple
+                                        input.checkbox-elem#apple(type='checkbox' name='brand')
+                                        label.checkbox-lable(for='apple') Apple
                                     li.accardion-item-subitems-subitem
-                                        label
-                                            input(type="checkbox")
-                                            |Samsung
+                                        input.checkbox-elem#samsung(type='checkbox' name='brand')
+                                        label.checkbox-lable(for='samsung') Samsung
                                     li.accardion-item-subitems-subitem
-                                        label
-                                            input(type="checkbox")
-                                            |Asus
+                                        input.checkbox-elem#asus(type='checkbox' name='brand')
+                                        label.checkbox-lable(for='asus') Asus
                                     li.accardion-item-subitems-subitem
-                                        label
-                                            input(type="checkbox")
-                                            |Motorola
+                                        input.checkbox-elem#motorola(type='checkbox' name='brand')
+                                        label.checkbox-lable(for='motorola') Motorola
                                 a.reset_filter(href='#') Сбросить фильтр
 
                             li.accardion-item
@@ -139,25 +132,20 @@ html(lang='ru-RU')
                                 a.accardion-item-trigger(href='#') Операционная система
                                 ul.accardion-item-subitems
                                     li.accardion-item-subitems-subitem
-                                        label
-                                            input(type="checkbox")
-                                            |Android
+                                        input.checkbox-elem#android(type='checkbox' name='operating-system')
+                                        label.checkbox-lable(for='android') Android
                                     li.accardion-item-subitems-subitem
-                                        label
-                                            input(type="checkbox")
-                                            |iOS
+                                        input.checkbox-elem#ios(type='checkbox' name='operating-system')
+                                        label.checkbox-lable(for='ios') iOS
                                     li.accardion-item-subitems-subitem
-                                        label
-                                            input(type="checkbox")
-                                            |Windows Mobile
+                                        input.checkbox-elem#win(type='checkbox' name='operating-system')
+                                        label.checkbox-lable(for='win') Windows Mobile
                                     li.accardion-item-subitems-subitem
-                                        label
-                                            input(type="checkbox")
-                                            |Symbian
+                                        input.checkbox-elem#symbian(type='checkbox' name='operating-system')
+                                        label.checkbox-lable(for='symbian') Symbian
                                     li.accardion-item-subitems-subitem
-                                        label
-                                            input(type="checkbox")
-                                            |Custom
+                                        input.checkbox-elem#custom(type='checkbox' name='operating-system')
+                                        label.checkbox-lable(for='custom') Custom
                                 a.reset_filter(href='#') Сбросить фильтр
 
 
