@@ -8,7 +8,7 @@
 .page1-items-item{
   display: inline-block;
   vertical-align: middle;
-  margin-right: 23px;
+  margin-right: 20px;
   &:last-child{
     margin-right: 0;
   }
@@ -46,6 +46,12 @@
   color: #FFFFFF;
   outline-style: none;
   border: none;
+  &:hover{
+    box-shadow: 0px 0px 5px 1px rgb(204,82,0) inset;
+  }
+  &:active{
+    box-shadow: 0px 0px 5px 2px rgb(204,82,0) inset;
+  }
 }
 .page1-items-item_status{
   //overflow: visible;

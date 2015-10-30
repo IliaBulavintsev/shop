@@ -1,7 +1,6 @@
 .device-items {
   margin: 0;
   padding: 0;
-  display: none;
 }
 
 .device-items-item {
@@ -54,6 +53,9 @@
 .device-image-item:first-child {
   margin-left: 0;
   cursor: default;
+}
+.device-image-item:first-child:hover {
+  border-color: #dee1e4;
 }
 .device-image-item:last-child {
   margin-right: 0;
@@ -176,4 +178,10 @@
   background-image: -ms-linear-gradient(56deg, #ff6600 0%, #ff6a1b 45%, #ff6e35 99%);
   color: white;
   font-size: 14px;
+}
+.device-cart-push:hover {
+  box-shadow: 0px 0px 5px 1px #cc5200 inset;
+}
+.device-cart-push:active {
+  box-shadow: 0px 0px 5px 2px #cc5200 inset;
 }

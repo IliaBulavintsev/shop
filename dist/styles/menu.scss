@@ -19,6 +19,9 @@
 .navigation-menu-items-link{
   text-decoration: none;
   color: #333333;
+  &:hover{
+    color: #333333;
+  }
 }
 .navigation-menu-items-item{
   display: inline-block;

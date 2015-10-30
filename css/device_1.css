@@ -9,7 +9,7 @@
 .page1-items-item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 23px;
+  margin-right: 20px;
 }
 .page1-items-item:last-child {
   margin-right: 0;
@@ -51,6 +51,12 @@
   color: #FFFFFF;
   outline-style: none;
   border: none;
+}
+.page1-items-item-button:hover {
+  box-shadow: 0px 0px 5px 1px #cc5200 inset;
+}
+.page1-items-item-button:active {
+  box-shadow: 0px 0px 5px 2px #cc5200 inset;
 }
 
 .page1-items-item_status {

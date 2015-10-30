@@ -26,12 +26,21 @@
   margin-left: -8px;
   color: #FFFFFF;
   outline-style: none;
+  &:hover{
+    box-shadow: 0px 0px 5px 1px rgb(204,82,0) inset;
+  }
+  &:active{
+    box-shadow: 0px 0px 5px 2px rgb(204,82,0) inset;
+  }
 }
 
 
 .navigation-head-logo{
   float: left;
   margin-right: 57px;
+  height: 37px;
+  width: 238px;
+  overflow: hidden;
 }
 .navigation-head-search{
   float: left;

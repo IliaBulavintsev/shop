@@ -15,6 +15,12 @@ mixin navigation(links)
                 -else
                     li.navigation-menu-items-item= link
 
+mixin navigation-footer(links)
+    ul.navigation-footer-items.clearfix
+        -each link in links
+            li.navigation-footer-items-item
+                a(href='#').navigation-footer-items-link= link
+
 
 mixin social_ico_header(socials)
     ul.social
@@ -22,6 +28,15 @@ mixin social_ico_header(socials)
             li.social-items
                 a(href='#')
                     img(alt=social, src='img/'+social+'.png')
+
+mixin social_ico_footer(socials)
+    ul.social.social_footer
+        -each social in socials
+            li.social-items.social-items_footer
+                a(href='#')
+                    img.social-ico-footer(alt=social, src='img/'+social+'-footer.png')
+
+
 
 
 mixin accardeon(cat)

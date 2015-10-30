@@ -19,7 +19,7 @@
 }
 //DISPLAY HERE!!!
 .page2-items{
-  display: none;
+  //display: none;
   padding: 0;
   margin: 0;
   border: 1px solid rgb(222, 225, 228);
@@ -53,6 +53,9 @@
   &:first-child {
     margin-left: 0;
     cursor: default;
+    &:hover{
+      border-color: rgb(222, 225, 228);
+    }
   }
   &:last-child{
     margin-right: 0;
@@ -148,10 +151,13 @@
   outline-style: none;
   color: #FFFFFF;
   margin-bottom: 19px;
-  //position: absolute;
-  //bottom: 35px;
-  //right: 0;
-  //left: 0;
+  &:hover{
+    box-shadow: 0px 0px 5px 1px rgb(204,82,0) inset;
+  }
+  &:active{
+    box-shadow: 0px 0px 5px 2px rgb(204,82,0) inset;
+  }
+
 }
 .page2-status{
   &:before{

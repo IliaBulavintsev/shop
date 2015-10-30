@@ -24,6 +24,9 @@
   text-decoration: none;
   color: #333333;
 }
+.navigation-menu-items-link:hover {
+  color: #333333;
+}
 
 .navigation-menu-items-item {
   display: inline-block;

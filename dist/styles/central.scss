@@ -1,7 +1,19 @@
+.main-wrapper{
+  min-height: 100%;
+  min-width: 1100px;
+  height: auto;
+  overflow: hidden;
+  //position: relative;
+  &:after{
+    content: " ";
+    height: 220px;
+    display: block;
+  }
+}
 .central-wrapper{
   width: 1100px;
   margin: 0 auto;
-  margin-bottom: 77px;
+  margin-bottom: 33px;
 }
 .wrapper-menu-map{
   margin-bottom: 35px ;
@@ -214,6 +226,11 @@
   border-left: 2px solid #dee1e4;
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  &:hover{
+    background: url("../img/view-list-2-hover.png") no-repeat;
+    background-position: center;
+  }
 }
 .content-view_right-items-wrapperimage_2{
   background: url("../img/view-list.png") no-repeat;
@@ -221,6 +238,11 @@
   border-left: 2px solid #dee1e4;
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  &:hover{
+    background: url("../img/view-list-hover.png") no-repeat;
+    background-position: center;
+  }
 }
 .content-view_right-items-wrapperimage_3{
   background: url("../img/view-thumbnail.png") no-repeat;
@@ -228,6 +250,11 @@
   border-left: 2px solid #dee1e4;
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  &:hover{
+    background: url("../img/view-thumbnail-hover.png") no-repeat;
+    background-position: center;
+  }
 }
 .wrapper-menu-map_href {
   cursor: pointer ;

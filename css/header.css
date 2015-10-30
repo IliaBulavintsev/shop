@@ -25,6 +25,21 @@
 .social-items {
   display: inline-block;
   margin-right: 15px;
+  width: 26px;
+  height: 26px;
+  overflow: hidden;
+}
+
+.social-items_vk:hover .social-img_vk {
+  display: none;
+}
+
+.social-items_tw:hover .social-img_tw {
+  display: none;
+}
+
+.social-items_fb:hover .social-img_fb {
+  display: none;
 }
 
 .adress {
@@ -45,4 +60,12 @@
 
 .adress-common {
   display: inline-block;
+}
+
+.adress_a {
+  text-decoration: none;
+  color: #000000;
+}
+.adress_a:hover {
+  color: #ff6600;
 }
