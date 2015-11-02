@@ -85,6 +85,15 @@
 .page2-article{
   margin-left: 10px;
 }
+.page2-article-text{
+  font-family: "OpenSans-Semi";
+  font-size: 14px;
+  color: #7f7f7f;
+}
+.page2-article-number{
+  font-family: "OpenSans-Semi";
+  font-size: 14px;
+}
 .page2-device-rating-wrapper{
   width: 137px;
 }
@@ -114,9 +123,12 @@
   color: #FFFFFF;
   margin-top: 2px;
   font-size: 12px;
+  font-family: "OpenSans-Semi";
 }
 .page2-name{
   margin-bottom: 30px;
+  font-family: "OpenSans-Semi";
+  font-size: 16px;
 }
 .page2-characters{
   margin-bottom: 22px;
@@ -125,6 +137,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
+  font-family: "OpenSans";
+  font-size: 14px;
   //height: 75px;
   //overflow: hidden;
   //text-overflow: ellipsis;
@@ -133,12 +147,13 @@
 .pages2-items-item_rightcol{
   position: relative;
   text-align: right;
-  padding-top: 5px;
   padding-left: 24px;
   border-left: 1px solid #dee1e4;
 }
 .page2-price{
   margin-bottom: 122px;
+  font-family: "OpenSans-Semi";
+  font-size: 16px;
 }
 .page2-button{
   border-radius: 5px;
@@ -151,6 +166,8 @@
   outline-style: none;
   color: #FFFFFF;
   margin-bottom: 19px;
+  font-family: "OpenSans-Semi";
+  font-size: 14px;
   &:hover{
     box-shadow: 0px 0px 5px 1px rgb(204,82,0) inset;
   }
@@ -160,13 +177,20 @@
 
 }
 .page2-status{
+  font-family: "OpenSans-Semi";
+  font-size: 12px;
+  color: #7f7f7f;
+  position: relative;
   &:before{
+    position: absolute;
+    content: '';
     display: block;
+    float: left;
     border-radius: 50%;
     background-color: rgb(96, 172, 73);
     width: 7px;
     height: 7px;
-    margin-top: 5px ;
-    margin-left: -12px ;
+    top: 6px ;
+    left: 25px;
   }
 }

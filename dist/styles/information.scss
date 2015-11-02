@@ -5,8 +5,32 @@
 }
 .information-main{
   margin-bottom: 33px;
-
-}
+  font-family: 'OpenSans-Semi';
+  font-size: 20px;
+  }
 .information-column{
-  text-align: justify;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  p{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    margin-bottom: 20px;
+
+  }
+  .column{
+    &.first{
+      float: left !important;
+      p{
+        margin-right: 25px !important;
+      }
+    }
+    &.last{
+      float: right !important;
+      p{
+        margin-left: 25px !important;
+      }
+    }
+  }
 }

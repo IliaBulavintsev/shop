@@ -20,6 +20,9 @@
   height: 23px;
   text-align: center;
   padding-top: 3px;
+  font-size: 12px;
+  font-family: 'OpenSans-Semi';
+  color: #7f7f7f;
 }
 .list-pages-items-item:first-child {
   background: url("../img/arrow-left.png") no-repeat center center;

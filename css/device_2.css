@@ -92,6 +92,17 @@
   margin-left: 10px;
 }
 
+.page2-article-text {
+  font-family: "OpenSans-Semi";
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+.page2-article-number {
+  font-family: "OpenSans-Semi";
+  font-size: 14px;
+}
+
 .page2-device-rating-wrapper {
   width: 137px;
 }
@@ -123,10 +134,13 @@
   color: #FFFFFF;
   margin-top: 2px;
   font-size: 12px;
+  font-family: "OpenSans-Semi";
 }
 
 .page2-name {
   margin-bottom: 30px;
+  font-family: "OpenSans-Semi";
+  font-size: 16px;
 }
 
 .page2-characters {
@@ -136,18 +150,21 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
+  font-family: "OpenSans";
+  font-size: 14px;
 }
 
 .pages2-items-item_rightcol {
   position: relative;
   text-align: right;
-  padding-top: 5px;
   padding-left: 24px;
   border-left: 1px solid #dee1e4;
 }
 
 .page2-price {
   margin-bottom: 122px;
+  font-family: "OpenSans-Semi";
+  font-size: 16px;
 }
 
 .page2-button {
@@ -161,6 +178,8 @@
   outline-style: none;
   color: #FFFFFF;
   margin-bottom: 19px;
+  font-family: "OpenSans-Semi";
+  font-size: 14px;
 }
 .page2-button:hover {
   box-shadow: 0px 0px 5px 1px #cc5200 inset;
@@ -169,12 +188,21 @@
   box-shadow: 0px 0px 5px 2px #cc5200 inset;
 }
 
+.page2-status {
+  font-family: "OpenSans-Semi";
+  font-size: 12px;
+  color: #7f7f7f;
+  position: relative;
+}
 .page2-status:before {
+  position: absolute;
+  content: '';
   display: block;
+  float: left;
   border-radius: 50%;
   background-color: #60ac49;
   width: 7px;
   height: 7px;
-  margin-top: 5px;
-  margin-left: -12px;
+  top: 6px;
+  left: 25px;
 }

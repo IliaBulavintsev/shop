@@ -1,6 +1,7 @@
 .device-items {
   margin: 0;
   padding: 0;
+  display: none;
 }
 
 .device-items-item {
@@ -90,6 +91,8 @@
 }
 
 .device-characters-item {
+  font-family: 'OpenSans';
+  font-size: 14px;
   list-style: none;
 }
 .device-characters-item:first-child {
@@ -99,6 +102,11 @@
 }
 .device-characters-item:nth-child(even) {
   background-color: #e6e6e6;
+}
+
+.device-characters-item_name {
+  font-family: 'OpenSans-Semi';
+  font-size: 14px;
 }
 
 .device-characters-item-text_left {
@@ -147,6 +155,8 @@
 .device-price {
   text-align: center;
   margin-bottom: 9px;
+  font-family: 'OpenSans-Semi';
+  font-size: 16px;
 }
 
 .device-cart-status {
@@ -154,6 +164,8 @@
   color: #7f7f7f;
   padding-left: 14px;
   margin-top: 6px;
+  font-family: 'OpenSans-Semi';
+  font-size: 12px;
 }
 .device-cart-status:before {
   display: block;
@@ -177,6 +189,7 @@
   background-image: -webkit-linear-gradient(56deg, #ff6600 0%, #ff6a1b 45%, #ff6e35 99%);
   background-image: -ms-linear-gradient(56deg, #ff6600 0%, #ff6a1b 45%, #ff6e35 99%);
   color: white;
+  font-family: 'OpenSans-Semi';
   font-size: 14px;
 }
 .device-cart-push:hover {

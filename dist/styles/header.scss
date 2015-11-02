@@ -57,10 +57,14 @@
   background: url("../img/map-pin.png") no-repeat;
   padding-left: 20px;
   margin-right: 86px;
+  font-family: "OpenSans";
+  font-size: 14px;
 }
 .adress-telephone{
-  background: url("../img/telephone.png") no-repeat;
+  background: url("../img/telephone.png") no-repeat 0px 5px;
   padding-left: 20px;
+  font-family: "OpenSans-Semi";
+  font-size: 18px;
 }
 .adress-common{
   display: inline-block;

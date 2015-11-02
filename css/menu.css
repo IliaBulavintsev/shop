@@ -22,6 +22,8 @@
 .navigation-menu-items-link {
   text-decoration: none;
   color: #333333;
+  font-family: "OpenSans";
+  font-size: 16px;
 }
 .navigation-menu-items-link:hover {
   color: #333333;

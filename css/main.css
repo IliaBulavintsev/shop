@@ -1,3 +1,4 @@
+@import url(fonts/stylesheet.css);
 body {
   background: #f4f4f4;
   background-size: cover;
@@ -2675,11 +2676,15 @@ body .ui-tooltip {
   background: url("../img/map-pin.png") no-repeat;
   padding-left: 20px;
   margin-right: 86px;
+  font-family: "OpenSans";
+  font-size: 14px;
 }
 
 .adress-telephone {
-  background: url("../img/telephone.png") no-repeat;
+  background: url("../img/telephone.png") no-repeat 0px 5px;
   padding-left: 20px;
+  font-family: "OpenSans-Semi";
+  font-size: 18px;
 }
 
 .adress-common {
@@ -2724,6 +2729,8 @@ body .ui-tooltip {
   margin-left: -8px;
   color: #FFFFFF;
   outline-style: none;
+  font-family: "OpenSans-Semi";
+  font-size: 16px;
 }
 .navigation-head-search-button:hover {
   box-shadow: 0px 0px 5px 1px #cc5200 inset;
@@ -2793,6 +2800,8 @@ body .ui-tooltip {
 .navigation-menu-items-link {
   text-decoration: none;
   color: #333333;
+  font-family: "OpenSans";
+  font-size: 16px;
 }
 .navigation-menu-items-link:hover {
   color: #333333;
@@ -2839,10 +2848,14 @@ body .ui-tooltip {
 
 .wrapper-menu-map {
   margin-bottom: 35px;
+  font-family: "OpenSans";
+  font-size: 14px;
 }
 
 .wrapper-menu-category {
   margin-bottom: 35px;
+  font-family: "OpenSans-Semi";
+  font-size: 20px;
 }
 
 .wrapper-menu-map_catalog {
@@ -2887,6 +2900,8 @@ body .ui-tooltip {
   text-indent: 30px;
   text-decoration: none;
   color: #909090;
+  font-family: "OpenSans";
+  font-size: 14px;
 }
 .sidebar-cat-items-item a.sidebar-cat-items-item-link:hover {
   color: #5d656c;
@@ -2927,6 +2942,8 @@ body .ui-tooltip {
   color: #000;
   background: url("../img/corner-down.png") no-repeat;
   background-position: 300 19;
+  font-family: "OpenSans-Semi";
+  font-size: 16px;
 }
 .accardion-item-trigger:hover {
   background-color: #d9e5ea;
@@ -2946,6 +2963,16 @@ body .ui-tooltip {
   padding-left: 30px;
   margin-bottom: 19px;
   color: #5db2fc;
+  padding: 0;
+}
+
+.reset_filter_link {
+  font-family: 'OpenSans';
+  font-size: 14px;
+  color: #5db2fc;
+}
+.reset_filter_link:hover {
+  color: #55aaff;
 }
 
 .accardion-item-to, .accardion-item-from {
@@ -3060,6 +3087,21 @@ body .ui-tooltip {
   float: left;
   padding-top: 15px;
   margin-right: 17px;
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #666e75;
+}
+
+.sort {
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #666e75;
+}
+
+.sort-select {
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #7f7f7f;
 }
 
 .content-view_right {
@@ -3155,6 +3197,8 @@ body .ui-tooltip {
 
 .accardion-item_wrap {
   display: none;
+  font-family: "OpenSans";
+  font-size: 14px;
 }
 
 .accardion-item-trigger_active {
@@ -3175,6 +3219,7 @@ body .ui-tooltip {
 .device-items {
   margin: 0;
   padding: 0;
+  display: none;
 }
 
 .device-items-item {
@@ -3264,6 +3309,8 @@ body .ui-tooltip {
 }
 
 .device-characters-item {
+  font-family: 'OpenSans';
+  font-size: 14px;
   list-style: none;
 }
 .device-characters-item:first-child {
@@ -3273,6 +3320,11 @@ body .ui-tooltip {
 }
 .device-characters-item:nth-child(even) {
   background-color: #e6e6e6;
+}
+
+.device-characters-item_name {
+  font-family: 'OpenSans-Semi';
+  font-size: 14px;
 }
 
 .device-characters-item-text_left {
@@ -3321,6 +3373,8 @@ body .ui-tooltip {
 .device-price {
   text-align: center;
   margin-bottom: 9px;
+  font-family: 'OpenSans-Semi';
+  font-size: 16px;
 }
 
 .device-cart-status {
@@ -3328,6 +3382,8 @@ body .ui-tooltip {
   color: #7f7f7f;
   padding-left: 14px;
   margin-top: 6px;
+  font-family: 'OpenSans-Semi';
+  font-size: 12px;
 }
 .device-cart-status:before {
   display: block;
@@ -3351,6 +3407,7 @@ body .ui-tooltip {
   background-image: -webkit-linear-gradient(56deg, #ff6600 0%, #ff6a1b 45%, #ff6e35 99%);
   background-image: -ms-linear-gradient(56deg, #ff6600 0%, #ff6a1b 45%, #ff6e35 99%);
   color: white;
+  font-family: 'OpenSans-Semi';
   font-size: 14px;
 }
 .device-cart-push:hover {
@@ -3382,6 +3439,9 @@ body .ui-tooltip {
   height: 23px;
   text-align: center;
   padding-top: 3px;
+  font-size: 12px;
+  font-family: 'OpenSans-Semi';
+  color: #7f7f7f;
 }
 .list-pages-items-item:first-child {
   background: url("../img/arrow-left.png") no-repeat center center;
@@ -3491,6 +3551,17 @@ body .ui-tooltip {
   margin-left: 10px;
 }
 
+.page2-article-text {
+  font-family: "OpenSans-Semi";
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+.page2-article-number {
+  font-family: "OpenSans-Semi";
+  font-size: 14px;
+}
+
 .page2-device-rating-wrapper {
   width: 137px;
 }
@@ -3522,10 +3593,13 @@ body .ui-tooltip {
   color: #FFFFFF;
   margin-top: 2px;
   font-size: 12px;
+  font-family: "OpenSans-Semi";
 }
 
 .page2-name {
   margin-bottom: 30px;
+  font-family: "OpenSans-Semi";
+  font-size: 16px;
 }
 
 .page2-characters {
@@ -3535,18 +3609,21 @@ body .ui-tooltip {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
+  font-family: "OpenSans";
+  font-size: 14px;
 }
 
 .pages2-items-item_rightcol {
   position: relative;
   text-align: right;
-  padding-top: 5px;
   padding-left: 24px;
   border-left: 1px solid #dee1e4;
 }
 
 .page2-price {
   margin-bottom: 122px;
+  font-family: "OpenSans-Semi";
+  font-size: 16px;
 }
 
 .page2-button {
@@ -3560,6 +3637,8 @@ body .ui-tooltip {
   outline-style: none;
   color: #FFFFFF;
   margin-bottom: 19px;
+  font-family: "OpenSans-Semi";
+  font-size: 14px;
 }
 .page2-button:hover {
   box-shadow: 0px 0px 5px 1px #cc5200 inset;
@@ -3568,17 +3647,27 @@ body .ui-tooltip {
   box-shadow: 0px 0px 5px 2px #cc5200 inset;
 }
 
+.page2-status {
+  font-family: "OpenSans-Semi";
+  font-size: 12px;
+  color: #7f7f7f;
+  position: relative;
+}
 .page2-status:before {
+  position: absolute;
+  content: '';
   display: block;
+  float: left;
   border-radius: 50%;
   background-color: #60ac49;
   width: 7px;
   height: 7px;
-  margin-top: 5px;
-  margin-left: -12px;
+  top: 6px;
+  left: 25px;
 }
 
 .page1-items {
+  display: none;
   margin: 0;
   padding: 0;
   border: 1px solid #dee1e4;
@@ -3631,6 +3720,8 @@ body .ui-tooltip {
   color: #FFFFFF;
   outline-style: none;
   border: none;
+  font-family: 'OpenSans-Semi';
+  font-size: 14px;
 }
 .page1-items-item-button:hover {
   box-shadow: 0px 0px 5px 1px #cc5200 inset;
@@ -3641,6 +3732,9 @@ body .ui-tooltip {
 
 .page1-items-item_status {
   position: relative;
+  font-family: 'OpenSans-Semi';
+  font-size: 12px;
+  color: #7f7f7f;
 }
 .page1-items-item_status:before {
   position: absolute;
@@ -3656,11 +3750,27 @@ body .ui-tooltip {
 }
 
 .page1-items-item_characters {
-  margin-right: -10px;
+  margin-right: 10px;
+  font-family: 'OpenSans-Semi';
+  font-size: 14px;
+}
+
+.page1-items-item_numart {
+  font-family: 'OpenSans-Semi';
+  font-size: 14px;
+  margin-right: 20px;
 }
 
 .page1-items-item_articul {
   margin-right: 0px;
+  font-family: 'OpenSans-Semi';
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+.page1-items-item_price {
+  font-family: 'OpenSans-Semi';
+  font-size: 18px;
 }
 
 .information {
@@ -3671,10 +3781,32 @@ body .ui-tooltip {
 
 .information-main {
   margin-bottom: 33px;
+  font-family: 'OpenSans-Semi';
+  font-size: 20px;
 }
 
 .information-column {
+  font-family: 'OpenSans';
+  font-size: 14px;
+}
+.information-column p {
   text-align: justify;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.information-column .column.first {
+  float: left !important;
+}
+.information-column .column.first p {
+  margin-right: 25px !important;
+}
+.information-column .column.last {
+  float: right !important;
+}
+.information-column .column.last p {
+  margin-left: 25px !important;
 }
 
 .footer {
@@ -3748,10 +3880,17 @@ body .ui-tooltip {
   margin-left: 438px;
   margin-top: -5px;
   color: #FFFFFF;
+  font-family: 'OpenSans';
+  font-size: 12px;
 }
 
 .navigation-footer-items-link {
+  font-family: 'OpenSans';
+  font-size: 14px;
   cursor: pointer;
+}
+.navigation-footer-items-link:hover {
+  color: #ff6600;
 }
 
 .social-ico-footer_tw:hover {

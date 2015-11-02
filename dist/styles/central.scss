@@ -17,9 +17,13 @@
 }
 .wrapper-menu-map{
   margin-bottom: 35px ;
+  font-family: "OpenSans";
+  font-size: 14px;
 }
 .wrapper-menu-category{
  margin-bottom: 35px;
+  font-family: "OpenSans-Semi";
+  font-size: 20px;
 }
 .wrapper-menu-map_main{
 
@@ -61,6 +65,8 @@
     text-indent: 30px;
     text-decoration: none;
     color: #909090;
+    font-family: "OpenSans";
+    font-size: 14px;
     //color: rgb(93, 101, 108);
     &:hover{
         color: rgb(93, 101, 108);
@@ -100,6 +106,8 @@
   color: #000;
   background: url("../img/corner-down.png") no-repeat;
   background-position: 300 19;
+  font-family: "OpenSans-Semi";
+  font-size: 16px;
   &:hover{
     background-color: #d9e5ea;
   }
@@ -116,6 +124,15 @@
   padding-left: 30px;
   margin-bottom: 19px;
   color: #5db2fc;
+  padding: 0;
+}
+.reset_filter_link{
+  font-family: 'OpenSans';
+  font-size: 14px;
+  color: #5db2fc;
+  &:hover{
+    color: #55aaff;
+  }
 }
 .accardion-item-to , .accardion-item-from{
   border-style: solid;
@@ -212,9 +229,19 @@
   float: left;
   padding-top: 15px;
   margin-right: 17px ;
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #666e75;
 }
 .sort{
-
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #666e75;
+}
+.sort-select{
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #7f7f7f;
 }
 .content-view_right{
   float: right;
@@ -296,6 +323,8 @@
 }
 .accardion-item_wrap{
   display: none;
+  font-family: "OpenSans";
+  font-size: 14px;
 }
 .accardion-item-trigger_active{
   display: block;

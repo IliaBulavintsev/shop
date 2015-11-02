@@ -70,9 +70,16 @@
   margin-left: 438px;
   margin-top: -5px;
   color: #FFFFFF;
+  font-family: 'OpenSans';
+  font-size: 12px;
 }
 .navigation-footer-items-link{
+  font-family: 'OpenSans';
+  font-size: 14px;
   cursor: pointer;
+  &:hover{
+    color: #ff6600;
+  }
 }
 .social-ico-footer_fb{
 
