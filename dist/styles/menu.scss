@@ -29,6 +29,7 @@
   padding-left: 10px;
   padding-right: 10px;
   margin-left: -4px ;
+  cursor: pointer;
   &:hover{
     background-color: #e4e2e2;
   }
@@ -38,6 +39,13 @@
   color: #FFFFFF;
   &:hover{
     background-color: #ff6e35;
+    color: #FFFFFF;
+  }
+}
+.navigation-menu-items-link_active{
+  color: #FFFFFF;
+  text-decoration: none;
+  &:hover{
     color: #FFFFFF;
   }
 }

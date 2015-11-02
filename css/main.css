@@ -2836,6 +2836,7 @@ body .ui-tooltip {
   padding-left: 10px;
   padding-right: 10px;
   margin-left: -4px;
+  cursor: pointer;
 }
 .navigation-menu-items-item:hover {
   background-color: #e4e2e2;
@@ -2847,6 +2848,14 @@ body .ui-tooltip {
 }
 .navigation-menu-items-item_active:hover {
   background-color: #ff6e35;
+  color: #FFFFFF;
+}
+
+.navigation-menu-items-link_active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.navigation-menu-items-link_active:hover {
   color: #FFFFFF;
 }
 
@@ -3278,6 +3287,7 @@ body .ui-tooltip {
 }
 
 .device-image-item {
+  position: relative;
   display: inline-block;
   border-width: 1px;
   border-color: #dee1e4;
@@ -3308,21 +3318,9 @@ body .ui-tooltip {
 .device-image-item_main {
   width: 100%;
   height: 134px;
-  background: url("../img/device-1.png") no-repeat center center;
   margin-bottom: 15px;
-}
-
-.device-image-item_1 {
-  background: url("../img/device-1.png") no-repeat center center;
-  background-size: 65%;
-}
-
-.device-image-item_2 {
-  background: url("../img/device-2.png") no-repeat center center;
-}
-
-.device-image-item_3 {
-  background: url("../img/device-3.png") no-repeat center center;
+  overflow: hidden;
+  position: relative;
 }
 
 .device-characters {
@@ -3347,6 +3345,11 @@ body .ui-tooltip {
 .device-characters-item_name {
   font-family: 'OpenSans-Semi';
   font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: -o-ellipsis-lastline;
 }
 
 .device-characters-item-text_left {
@@ -3439,6 +3442,28 @@ body .ui-tooltip {
   box-shadow: 0px 0px 5px 2px #cc5200 inset;
 }
 
+.img-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-height: 95%;
+  max-width: 95%;
+}
+
+.img-sub {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-height: 95%;
+  max-width: 95%;
+}
+
 .list-pages {
   float: right;
 }
@@ -3520,6 +3545,7 @@ body .ui-tooltip {
 }
 
 .page2-imgs-img {
+  position: relative;
   display: inline-block;
   border-width: 1px;
   border-color: #dee1e4;
@@ -3550,7 +3576,7 @@ body .ui-tooltip {
 .page2-imgs-img_main {
   width: 100%;
   height: 134px;
-  background: url("../img/device-1.png") no-repeat center center;
+  position: relative;
   margin-bottom: 15px;
 }
 
@@ -3686,6 +3712,28 @@ body .ui-tooltip {
   height: 7px;
   top: 6px;
   left: 25px;
+}
+
+.page2-img-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-height: 95%;
+  max-width: 95%;
+}
+
+.page2-img-sub {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-height: 95%;
+  max-width: 95%;
 }
 
 .page1-items {

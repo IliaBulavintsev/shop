@@ -11,18 +11,18 @@ var View = (function(){
 
     };
     var _setView1 = function(){
-        console.log('click1');
+
         $('.content-items').children().hide();
         $('.page2-items').show();
         $(this).addClass('.active_1')
     };
     var _setView2 = function(){
-        console.log('click2');
+
         $('.content-items').children().hide();
         $('.device-items').show();
     };
     var _setView3 = function(){
-        console.log('click3');
+
         $('.content-items').children().hide();
         $('.page1-items').show();
     };
@@ -32,5 +32,8 @@ var View = (function(){
     };
 
 })();
-
-View.init();
+$(document).ready(function(){
+    if($('.content-view_right-items').length) {
+        View.init();
+    }
+});

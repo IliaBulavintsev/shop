@@ -9,11 +9,12 @@
 mixin navigation(links)
     ul.navigation-menu-items.clearfix
         -each link in links
-            a.navigation-menu-items-link(href='#')
-                -if (link ==='Мобильные телефоны')
-                    li.navigation-menu-items-item.navigation-menu-items-item_active= link
-                -else
-                    li.navigation-menu-items-item= link
+            -if (link ==='Мобильные телефоны')
+                li.navigation-menu-items-item.navigation-menu-items-item_active
+                    a(href='#').navigation-menu-items-link_active= link
+            -else
+                li.navigation-menu-items-item
+                    a(href='#').navigation-menu-items-link= link
 
 mixin navigation-footer(links)
     ul.navigation-footer-items.clearfix

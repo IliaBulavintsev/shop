@@ -1,21 +1,16 @@
 var Slideshow_1 = (function(){
      var _changeSlide = function ($this, path) {
-       var //container = $this.closest('.device-image'),
+       var
            mainten = $this.parent(),
-           img = $(mainten).find('.page2-imgs-img_main');
-
-
-            //console.log(container);
-         console.log(img);
-         img.css('background', path);
+           img = $(mainten).find('.page2-imgs-img_main').children('img');
+         img.attr('src', path);
      };
 
     return {
         init : function(){
             $('.page2-imgs-img').on('click' , function(e){
                 e.preventDefault();
-                var path = $(this).css('background');
-                console.log(path);
+                var path = $(this).children('img').attr('src');
                 _changeSlide($(this), path)
             })
         }
@@ -25,20 +20,16 @@ var Slideshow_2 = (function(){
     var _changeSlide = function ($this, path) {
         var container = $this.closest('.device-image'),
             mainten = container.parent(),
-            img = $(mainten).find('.device-image-item_main');
+            img = $(mainten).find('.device-image-item_main').children('img');
 
-
-        console.log(container);
-        console.log(img);
-        img.css('background', path);
+        img.attr('src', path);
     };
 
     return {
         init : function(){
             $('.device-image-item').on('click' , function(e){
                 e.preventDefault();
-                var path = $(this).css('background');
-                console.log(path);
+                var path = $(this).children('img').attr('src');
                 _changeSlide($(this), path)
             })
         }
@@ -55,8 +46,6 @@ var Accardeon = function(){
             otherArrow = $this.closest('.accardion').find('.accardion-item-trigger');
 
 
-        console.log(arrow);
-
         if (!content.hasClass('active')){
             otherContent.slideUp(0).removeClass('active');
             otherArrow.removeClass('accardion-item-trigger_active');
@@ -64,7 +53,6 @@ var Accardeon = function(){
             arrow.addClass('accardion-item-trigger_active');
             content.stop(true, true).slideDown(0);
         }else{
-            console.log('else');
             content.removeClass('active');
             arrow.removeClass('accardion-item-trigger_active');
             content.stop(true, true).slideUp(0);
@@ -80,7 +68,6 @@ var Accardeon = function(){
 }();
 
 $(function(){
-    //console.log('ready');
     $('.information-column').columnize({
         width : 500
        });
@@ -93,8 +80,12 @@ $(function(){
             minimumResultsForSearch: Infinity
         });
     }
-    Slideshow_2.init();
-    Slideshow_1.init();
+    if ($('.device-image').length){
+        Slideshow_2.init();
+    }
+    if ($('.page2-imgs').length) {
+        Slideshow_1.init();
+    }
 
     Accardeon.init();
 
@@ -102,8 +93,6 @@ $(function(){
         var $this = $(this),
             container = $this.closest('.accardion-item-subitems'),
             checkboxes = container.find('input:checkbox');
-        //console.log(container);
-        //console.log(checkboxes);
 
         checkboxes.each(function(){
             $(this).prop('checked' , '');

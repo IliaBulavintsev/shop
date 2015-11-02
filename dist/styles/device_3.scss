@@ -35,6 +35,7 @@
   margin-bottom: 18px;
 }
 .device-image-item{
+  position: relative;
   display: inline-block;
   border-width: 1px;
   border-color: rgb(222, 225, 228);
@@ -64,18 +65,10 @@
 .device-image-item_main{
   width: 100%;
   height: 134px;
-  background: url("../img/device-1.png")no-repeat center center;
+  //background: url("../img/device-1.png")no-repeat center center;
   margin-bottom: 15px;
-}
-.device-image-item_1{
-  background: url("../img/device-1.png") no-repeat center center;
-  background-size: 65%;
-}
-.device-image-item_2{
-  background: url("../img/device-2.png") no-repeat center center;
-}
-.device-image-item_3{
-  background: url("../img/device-3.png") no-repeat center center;
+  overflow: hidden;
+  position: relative;
 }
 .device-characters{
  padding: 0;
@@ -97,6 +90,11 @@
 .device-characters-item_name{
   font-family: 'OpenSans-Semi';
   font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: -o-ellipsis-lastline;
 }
 .device-characters-item-text_left{
   float: left;
@@ -179,5 +177,25 @@
   &:active{
     box-shadow: 0px 0px 5px 2px rgb(204,82,0) inset;
   }
+}
+.img-main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-height: 95%;
+  max-width: 95%;
+}
+.img-sub{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-height: 95%;
+  max-width: 95%;
 }
 
