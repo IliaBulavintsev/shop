@@ -10,6 +10,17 @@
       border-radius: 3px;
       background: url("../img/check.png") no-repeat left;
     }
+    &:hover {
+      &:before {
+        content: '';
+        display: block;
+        height: 19px;
+        width: 19px;
+        position: absolute;
+        border-radius: 3px;
+        background: url("../img/check.png") no-repeat left;
+      }
+    }
   }
 
   &:not(checkd) + .checkbox-lable {
@@ -21,6 +32,17 @@
       position: absolute;
       border-radius: 3px;
       background-color: rgb(222, 225, 228);
+    }
+    &:hover {
+      &:before {
+        content: '';
+        display: block;
+        height: 19px;
+        width: 19px;
+        position: absolute;
+        border-radius: 3px;
+        background: url("../img/check-hover.png") no-repeat left;
+      }
     }
   }
 }

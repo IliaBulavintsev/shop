@@ -10,6 +10,15 @@
   border-radius: 3px;
   background: url("../img/check.png") no-repeat left;
 }
+.checkbox-elem:checked + .checkbox-lable:hover:before {
+  content: '';
+  display: block;
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  border-radius: 3px;
+  background: url("../img/check.png") no-repeat left;
+}
 .checkbox-elem:not(checkd) + .checkbox-lable:before {
   content: '';
   display: block;
@@ -18,6 +27,15 @@
   position: absolute;
   border-radius: 3px;
   background-color: #dee1e4;
+}
+.checkbox-elem:not(checkd) + .checkbox-lable:hover:before {
+  content: '';
+  display: block;
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  border-radius: 3px;
+  background: url("../img/check-hover.png") no-repeat left;
 }
 
 .checkbox-lable {

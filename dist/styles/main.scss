@@ -11,7 +11,14 @@ body{
 .clearfix:after{
   clear: both;
 }
+/*_______plugins______*/
+@import "_plugins/_jquery-ui";
+@import "_plugins/_select2";
+/*_______widgets______*/
+@import "_widgets/_slider";
+@import "_widgets/_select";
 
+/*____________________*/
 @import "header";
 @import "head-navigation";
 @import "menu";

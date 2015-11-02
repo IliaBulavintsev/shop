@@ -2,8 +2,10 @@
   "name": "Cooltech",
   "dependencies": {
     "jquery": "~2.1.4",
+    "jquery-ui": "jqueryui#~1.11.4",
     "jquery.columnizer": "~1.6.2",
     "modernizr": "2.8",
-    "normalize-css": "~3.0.3"
+    "normalize-css": "~3.0.3",
+    "select2": "~4.0.0"
   }
 }

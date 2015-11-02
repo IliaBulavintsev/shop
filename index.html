@@ -80,112 +80,127 @@
 					<div class="sidebar-accordion clearfix">
 						<ul class="accardion">
 							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Наличие в магазинах</a>
-								<ul class="geos">
-									<li class="geo">
-										<input id="all" type="radio" name="geolocation" checked="checked" class="radio-elem"/>
-										<label for="all" class="radio-lable">Во всех магазинах</label>
-									</li>
-									<li class="geo">
-										<input id="here" type="radio" name="geolocation" class="radio-elem"/>
-										<label for="here" class="radio-lable">В ближайшем ко мне магазине</label>
-									</li>
-								</ul>
+								<div class="accardion-item_wrap">
+									<ul class="geos">
+										<li class="geo">
+											<input id="all" type="radio" name="geolocation" checked="checked" class="radio-elem"/>
+											<label for="all" class="radio-lable">Во всех магазинах</label>
+										</li>
+										<li class="geo">
+											<input id="here" type="radio" name="geolocation" class="radio-elem"/>
+											<label for="here" class="radio-lable">В ближайшем ко мне магазине</label>
+										</li>
+									</ul>
+								</div>
 							</li>
 							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Бренды</a>
-								<ul class="accardion-item-subitems">
-									<li class="accardion-item-subitems-subitem">
-										<input id="lenovo" type="checkbox" name="brand" class="checkbox-elem"/>
-										<label for="lenovo" class="checkbox-lable">Lenovo</label>
-									</li>
-									<li class="accardion-item-subitems-subitem">
-										<input id="apple" type="checkbox" name="brand" class="checkbox-elem"/>
-										<label for="apple" class="checkbox-lable">Apple</label>
-									</li>
-									<li class="accardion-item-subitems-subitem">
-										<input id="samsung" type="checkbox" name="brand" class="checkbox-elem"/>
-										<label for="samsung" class="checkbox-lable">Samsung</label>
-									</li>
-									<li class="accardion-item-subitems-subitem">
-										<input id="asus" type="checkbox" name="brand" class="checkbox-elem"/>
-										<label for="asus" class="checkbox-lable">Asus</label>
-									</li>
-									<li class="accardion-item-subitems-subitem">
-										<input id="motorola" type="checkbox" name="brand" class="checkbox-elem"/>
-										<label for="motorola" class="checkbox-lable">Motorola</label>
-									</li>
-								</ul><a href="#" class="reset_filter">Сбросить фильтр</a>
+								<div class="accardion-item_wrap">
+									<ul class="accardion-item-subitems">
+										<li class="accardion-item-subitems-subitem">
+											<input id="lenovo" type="checkbox" name="brand" class="checkbox-elem"/>
+											<label for="lenovo" class="checkbox-lable">Lenovo</label>
+										</li>
+										<li class="accardion-item-subitems-subitem">
+											<input id="apple" type="checkbox" name="brand" class="checkbox-elem"/>
+											<label for="apple" class="checkbox-lable">Apple</label>
+										</li>
+										<li class="accardion-item-subitems-subitem">
+											<input id="samsung" type="checkbox" name="brand" class="checkbox-elem"/>
+											<label for="samsung" class="checkbox-lable">Samsung</label>
+										</li>
+										<li class="accardion-item-subitems-subitem">
+											<input id="asus" type="checkbox" name="brand" class="checkbox-elem"/>
+											<label for="asus" class="checkbox-lable">Asus</label>
+										</li>
+										<li class="accardion-item-subitems-subitem">
+											<input id="motorola" type="checkbox" name="brand" class="checkbox-elem"/>
+											<label for="motorola" class="checkbox-lable">Motorola</label>
+										</li>
+										<li class="reset_filter"><a href="#">Сбросить фильтр</a></li>
+									</ul>
+								</div>
 							</li>
 							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Цены</a>
-								<lable class="accardion-item-lable_choose">от
-									<input type="text" value="100" class="accardion-item-from"/>
-								</lable>
-								<lable class="accardion-item-lable_choose">до
-									<input type="text" value="5000" class="accardion-item-to"/>
-								</lable>
+								<div class="accardion-item_wrap">
+									<form class="slider-form">
+										<lable class="accardion-item-lable_choose">от
+											<input type="text" class="accardion-item-from"/>
+										</lable>
+										<lable class="accardion-item-lable_choose">до
+											<input type="text" class="accardion-item-to"/>
+										</lable>
+										<div data-min="0" data-max="10000" class="ui-slider-range"></div>
+									</form>
+								</div>
 							</li>
 							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Цвет</a>
-								<ul class="accardion-items-colorboxes">
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_1"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_2"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_3"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_4"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_5"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_6"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_7"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_8"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_9"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_10"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_11"></div>
-									</li>
-									<li class="accardion-item-colorboxes">
-										<div class="colorbox colorbox_12"></div>
-									</li>
-								</ul>
+								<div class="accardion-item_wrap">
+									<ul class="accardion-items-colorboxes">
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_1"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_2"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_3"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_4"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_5"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_6"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_7"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_8"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_9"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_10"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_11"></div>
+										</li>
+										<li class="accardion-item-colorboxes">
+											<div class="colorbox colorbox_12"></div>
+										</li>
+									</ul>
+								</div>
 							</li>
 							<li class="accardion-item"><a href="#" class="accardion-item-trigger">Операционная система</a>
-								<ul class="accardion-item-subitems">
-									<li class="accardion-item-subitems-subitem">
-										<input id="android" type="checkbox" name="operating-system" class="checkbox-elem"/>
-										<label for="android" class="checkbox-lable">Android</label>
-									</li>
-									<li class="accardion-item-subitems-subitem">
-										<input id="ios" type="checkbox" name="operating-system" class="checkbox-elem"/>
-										<label for="ios" class="checkbox-lable">iOS</label>
-									</li>
-									<li class="accardion-item-subitems-subitem">
-										<input id="win" type="checkbox" name="operating-system" class="checkbox-elem"/>
-										<label for="win" class="checkbox-lable">Windows Mobile</label>
-									</li>
-									<li class="accardion-item-subitems-subitem">
-										<input id="symbian" type="checkbox" name="operating-system" class="checkbox-elem"/>
-										<label for="symbian" class="checkbox-lable">Symbian</label>
-									</li>
-									<li class="accardion-item-subitems-subitem">
-										<input id="custom" type="checkbox" name="operating-system" class="checkbox-elem"/>
-										<label for="custom" class="checkbox-lable">Custom</label>
-									</li>
-								</ul><a href="#" class="reset_filter">Сбросить фильтр</a>
+								<div class="accardion-item_wrap">
+									<ul class="accardion-item-subitems">
+										<li class="accardion-item-subitems-subitem">
+											<input id="android" type="checkbox" name="operating-system" class="checkbox-elem"/>
+											<label for="android" class="checkbox-lable">Android</label>
+										</li>
+										<li class="accardion-item-subitems-subitem">
+											<input id="ios" type="checkbox" name="operating-system" class="checkbox-elem"/>
+											<label for="ios" class="checkbox-lable">iOS</label>
+										</li>
+										<li class="accardion-item-subitems-subitem">
+											<input id="win" type="checkbox" name="operating-system" class="checkbox-elem"/>
+											<label for="win" class="checkbox-lable">Windows Mobile</label>
+										</li>
+										<li class="accardion-item-subitems-subitem">
+											<input id="symbian" type="checkbox" name="operating-system" class="checkbox-elem"/>
+											<label for="symbian" class="checkbox-lable">Symbian</label>
+										</li>
+										<li class="accardion-item-subitems-subitem">
+											<input id="custom" type="checkbox" name="operating-system" class="checkbox-elem"/>
+											<label for="custom" class="checkbox-lable">Custom</label>
+										</li>
+										<li class="reset_filter"><a href="#">Сбросить фильтр</a></li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -204,335 +219,18 @@
 							<div class="view-span clearfix">Вид каталога</div>
 							<ul class="content-view_right-items clearfix">
 								<li class="content-view_right-item">
-									<div class="content-view_right-items-wrapperimage_1"></div>
+									<div class="content-view_right-items-wrapperimage_1 view-button_1"></div>
 								</li>
 								<li class="content-view_right-item">
-									<div class="content-view_right-items-wrapperimage_2"></div>
+									<div class="content-view_right-items-wrapperimage_3 view-button_2"></div>
 								</li>
 								<li class="content-view_right-item">
-									<div class="content-view_right-items-wrapperimage_3"></div>
+									<div class="content-view_right-items-wrapperimage_2 view-button_3"></div>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="content-items clearfix">
-						<ul class="device-items clearfix">
-							<li class="device-items-item clearfix">
-								<div class="device clearfix">
-									<ul class="device-image clearfix">
-										<li class="device-image-item device-image-item_main"></li>
-										<li class="device-image-item device-image-item_1"></li>
-										<li class="device-image-item device-image-item_2"></li>
-										<li class="device-image-item device-image-item_3"></li>
-									</ul>
-									<ul class="device-characters clearfix">
-										<li class="device-characters-item clearfix">Samsung GT-I9301I  GALAXY S 3</li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">1</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Белый</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-									</ul>
-									<div class="device-rating-wrapper clearfix">
-										<ul class="device-rating clearfix">
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star rating-star_off"></li>
-										</ul>
-										<div class="device-rating_number clearfix">4</div>
-									</div>
-									<div class="device-price">4 990 г</div>
-									<div class="device-cart clearfix">
-										<div class="device-cart-status clearfix">В наличии</div>
-										<button class="device-cart-push clearfix">В корзину</button>
-									</div>
-								</div>
-							</li>
-							<li class="device-items-item clearfix">
-								<div class="device clearfix">
-									<ul class="device-image clearfix">
-										<li class="device-image-item device-image-item_main"></li>
-										<li class="device-image-item device-image-item_1"></li>
-										<li class="device-image-item device-image-item_2"></li>
-										<li class="device-image-item device-image-item_3"></li>
-									</ul>
-									<ul class="device-characters clearfix">
-										<li class="device-characters-item clearfix">Microsoft Lumia 640 RM-1077</li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Белый</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Windows Phone</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">A-GPS</span></li>
-									</ul>
-									<div class="device-rating-wrapper clearfix">
-										<ul class="device-rating clearfix">
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star rating-star_off"></li>
-										</ul>
-										<div class="device-rating_number clearfix">4</div>
-									</div>
-									<div class="device-price">4 990 г</div>
-									<div class="device-cart clearfix">
-										<div class="device-cart-status clearfix">В наличии</div>
-										<button class="device-cart-push clearfix">В корзину</button>
-									</div>
-								</div>
-							</li>
-							<li class="device-items-item clearfix">
-								<div class="device clearfix">
-									<ul class="device-image clearfix">
-										<li class="device-image-item device-image-item_main"></li>
-										<li class="device-image-item device-image-item_1"></li>
-										<li class="device-image-item device-image-item_2"></li>
-										<li class="device-image-item device-image-item_3"></li>
-									</ul>
-									<ul class="device-characters clearfix">
-										<li class="device-characters-item clearfix">Archos 50 Oxygen Plus</li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Серый</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-									</ul>
-									<div class="device-rating-wrapper clearfix">
-										<ul class="device-rating clearfix">
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star rating-star_off"></li>
-										</ul>
-										<div class="device-rating_number clearfix">4</div>
-									</div>
-									<div class="device-price">4 990 г</div>
-									<div class="device-cart clearfix">
-										<div class="device-cart-status clearfix">В наличии</div>
-										<button class="device-cart-push clearfix">В корзину</button>
-									</div>
-								</div>
-							</li>
-							<li class="device-items-item clearfix">
-								<div class="device clearfix">
-									<ul class="device-image clearfix">
-										<li class="device-image-item device-image-item_main"></li>
-										<li class="device-image-item device-image-item_1"></li>
-										<li class="device-image-item device-image-item_2"></li>
-										<li class="device-image-item device-image-item_3"></li>
-									</ul>
-									<ul class="device-characters clearfix">
-										<li class="device-characters-item clearfix">Philips S398 Black</li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Серый</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-									</ul>
-									<div class="device-rating-wrapper clearfix">
-										<ul class="device-rating clearfix">
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star rating-star_off"></li>
-										</ul>
-										<div class="device-rating_number clearfix">4</div>
-									</div>
-									<div class="device-price">4 990 г</div>
-									<div class="device-cart clearfix">
-										<div class="device-cart-status clearfix">В наличии</div>
-										<button class="device-cart-push clearfix">В корзину</button>
-									</div>
-								</div>
-							</li>
-							<li class="device-items-item clearfix">
-								<div class="device clearfix">
-									<ul class="device-image clearfix">
-										<li class="device-image-item device-image-item_main"></li>
-										<li class="device-image-item device-image-item_1"></li>
-										<li class="device-image-item device-image-item_2"></li>
-										<li class="device-image-item device-image-item_3"></li>
-									</ul>
-									<ul class="device-characters clearfix">
-										<li class="device-characters-item clearfix">Microsoft Lumia 430 RM-10</li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Windows Phone</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">A-GPS</span></li>
-									</ul>
-									<div class="device-rating-wrapper clearfix">
-										<ul class="device-rating clearfix">
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star rating-star_off"></li>
-										</ul>
-										<div class="device-rating_number clearfix">4</div>
-									</div>
-									<div class="device-price">4 990 г</div>
-									<div class="device-cart clearfix">
-										<div class="device-cart-status clearfix">В наличии</div>
-										<button class="device-cart-push clearfix">В корзину</button>
-									</div>
-								</div>
-							</li>
-							<li class="device-items-item clearfix">
-								<div class="device clearfix">
-									<ul class="device-image clearfix">
-										<li class="device-image-item device-image-item_main"></li>
-										<li class="device-image-item device-image-item_1"></li>
-										<li class="device-image-item device-image-item_2"></li>
-										<li class="device-image-item device-image-item_3"></li>
-									</ul>
-									<ul class="device-characters clearfix">
-										<li class="device-characters-item clearfix">Senseit L301 Black</li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-									</ul>
-									<div class="device-rating-wrapper clearfix">
-										<ul class="device-rating clearfix">
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star rating-star_off"></li>
-										</ul>
-										<div class="device-rating_number clearfix">4</div>
-									</div>
-									<div class="device-price">4 990 г</div>
-									<div class="device-cart clearfix">
-										<div class="device-cart-status clearfix">В наличии</div>
-										<button class="device-cart-push clearfix">В корзину</button>
-									</div>
-								</div>
-							</li>
-							<li class="device-items-item clearfix">
-								<div class="device clearfix">
-									<ul class="device-image clearfix">
-										<li class="device-image-item device-image-item_main"></li>
-										<li class="device-image-item device-image-item_1"></li>
-										<li class="device-image-item device-image-item_2"></li>
-										<li class="device-image-item device-image-item_3"></li>
-									</ul>
-									<ul class="device-characters clearfix">
-										<li class="device-characters-item clearfix">HIGHSCREEN WinWin Black</li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-									</ul>
-									<div class="device-rating-wrapper clearfix">
-										<ul class="device-rating clearfix">
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star rating-star_off"></li>
-										</ul>
-										<div class="device-rating_number clearfix">4</div>
-									</div>
-									<div class="device-price">4 990 г</div>
-									<div class="device-cart clearfix">
-										<div class="device-cart-status clearfix">В наличии</div>
-										<button class="device-cart-push clearfix">В корзину</button>
-									</div>
-								</div>
-							</li>
-							<li class="device-items-item clearfix">
-								<div class="device clearfix">
-									<ul class="device-image clearfix">
-										<li class="device-image-item device-image-item_main"></li>
-										<li class="device-image-item device-image-item_1"></li>
-										<li class="device-image-item device-image-item_2"></li>
-										<li class="device-image-item device-image-item_3"></li>
-									</ul>
-									<ul class="device-characters clearfix">
-										<li class="device-characters-item clearfix">Alcatel OT4013D PIXI 3 (2 SIM)</li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Белый</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">A-GPS</span></li>
-									</ul>
-									<div class="device-rating-wrapper clearfix">
-										<ul class="device-rating clearfix">
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star rating-star_off"></li>
-										</ul>
-										<div class="device-rating_number clearfix">4</div>
-									</div>
-									<div class="device-price">4 990 г</div>
-									<div class="device-cart clearfix">
-										<div class="device-cart-status clearfix">В наличии</div>
-										<button class="device-cart-push clearfix">В корзину</button>
-									</div>
-								</div>
-							</li>
-							<li class="device-items-item clearfix">
-								<div class="device clearfix">
-									<ul class="device-image clearfix">
-										<li class="device-image-item device-image-item_main"></li>
-										<li class="device-image-item device-image-item_1"></li>
-										<li class="device-image-item device-image-item_2"></li>
-										<li class="device-image-item device-image-item_3"></li>
-									</ul>
-									<ul class="device-characters clearfix">
-										<li class="device-characters-item clearfix">Fly IQ434 Era Nano 5</li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
-									</ul>
-									<div class="device-rating-wrapper clearfix">
-										<ul class="device-rating clearfix">
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star"></li>
-											<li class="rating-star rating-star_off"></li>
-										</ul>
-										<div class="device-rating_number clearfix">4</div>
-									</div>
-									<div class="device-price">4 990 г</div>
-									<div class="device-cart clearfix">
-										<div class="device-cart-status clearfix">В наличии</div>
-										<button class="device-cart-push clearfix">В корзину</button>
-									</div>
-								</div>
-							</li>
-						</ul>
 						<ul class="page2-items">
 							<li class="page2-items-item clearfix">
 								<ul class="page2-items-coloms">
@@ -967,6 +665,323 @@
 								</ul>
 							</li>
 						</ul>
+						<ul class="device-items clearfix">
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Samsung GT-I9301I  GALAXY S 3</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">1</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Белый</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Microsoft Lumia 640 RM-1077</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Белый</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Windows Phone</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">A-GPS</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Archos 50 Oxygen Plus</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Серый</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Philips S398 Black</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Серый</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Microsoft Lumia 430 RM-10</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Windows Phone</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">A-GPS</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Senseit L301 Black</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">HIGHSCREEN WinWin Black</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Alcatel OT4013D PIXI 3 (2 SIM)</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Белый</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Есть</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">A-GPS</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+							<li class="device-items-item clearfix">
+								<div class="device clearfix">
+									<ul class="device-image clearfix">
+										<li class="device-image-item device-image-item_main"></li>
+										<li class="device-image-item device-image-item_1"></li>
+										<li class="device-image-item device-image-item_2"></li>
+										<li class="device-image-item device-image-item_3"></li>
+									</ul>
+									<ul class="device-characters clearfix">
+										<li class="device-characters-item clearfix">Fly IQ434 Era Nano 5</li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Тип SIM-карты</span><span class="device-characters-item-text_right clearfix">Micro-sim</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Кол-во SIM-карт</span><span class="device-characters-item-text_right clearfix">2</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Цвет</span><span class="device-characters-item-text_right clearfix">Черный</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">OC</span><span class="device-characters-item-text_right clearfix">Android</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">Связь 3G</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">4G(LTE)</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+										<li class="device-characters-item clearfix"><span class="device-characters-item-text_left clearfix">GPS-модуль</span><span class="device-characters-item-text_right clearfix">Нет</span></li>
+									</ul>
+									<div class="device-rating-wrapper clearfix">
+										<ul class="device-rating clearfix">
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star"></li>
+											<li class="rating-star rating-star_off"></li>
+										</ul>
+										<div class="device-rating_number clearfix">4</div>
+									</div>
+									<div class="device-price">4 990 г</div>
+									<div class="device-cart clearfix">
+										<div class="device-cart-status clearfix">В наличии</div>
+										<button class="device-cart-push clearfix">В корзину</button>
+									</div>
+								</div>
+							</li>
+						</ul>
 						<ul class="page1-items">
 							<li class="page1-list">
 								<ul class="page1-list-item">
@@ -1163,7 +1178,11 @@
 			</div>
 		</footer>
 		<script src="dist/bower/jquery/dist/jquery.js"></script>
+		<script src="dist/bower/jquery-ui/jquery-ui.js"></script>
+		<script src="dist/bower/select2/dist/js/select2.js"></script>
+		<script src="js/slider-widget.js"></script>
 		<script src="dist/bower/jquery.columnizer/src/jquery.columnizer.js"></script>
+		<script src="js/view.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

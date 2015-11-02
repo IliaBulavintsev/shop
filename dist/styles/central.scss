@@ -98,8 +98,11 @@
   text-indent: 30px;
   text-decoration: none;
   color: #000;
-  background: url("../img/corner.png") no-repeat;
+  background: url("../img/corner-down.png") no-repeat;
   background-position: 300 19;
+  &:hover{
+    background-color: #d9e5ea;
+  }
 }
 .accardion-item-subitems-subitem{
   list-style: none;
@@ -278,4 +281,33 @@
 .geo{
   list-style: none;
   margin-bottom: 19px;
+}
+.active_1{
+  background: url("../img/view-list-hover.png") no-repeat !important;
+  background-position: center;
+}
+.active_2{
+  background: url("../img/view-thumbnail-hover.png") no-repeat;
+  background-position: center;
+}
+.active_3{
+  background: url("../img/view-list-2-hover.png") no-repeat;
+  background-position: center;
+}
+.accardion-item_wrap{
+  display: none;
+}
+.accardion-item-trigger_active{
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  text-indent: 30px;
+  text-decoration: none;
+  color: #000;
+  background: url("../img/corner.png") no-repeat !important;
+  background-position: 300 19 !important;
+  margin-bottom: 5px;
+  &:hover{
+    background-color: #d9e5ea !important;
+  }
 }

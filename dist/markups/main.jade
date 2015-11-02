@@ -65,88 +65,97 @@ html(lang='ru-RU')
                         ul.accardion
                             li.accardion-item
                                 a.accardion-item-trigger(href='#') Наличие в магазинах
-                                ul.geos
-                                    li.geo
-                                        input.radio-elem#all(type='radio' name='geolocation' checked="checked")
-                                        label.radio-lable(for='all') Во всех магазинах
-                                    li.geo
-                                        input.radio-elem#here(type='radio' name='geolocation')
-                                        label.radio-lable(for='here') В ближайшем ко мне магазине
+                                .accardion-item_wrap
+                                    ul.geos
+                                        li.geo
+                                            input.radio-elem#all(type='radio' name='geolocation' checked="checked")
+                                            label.radio-lable(for='all') Во всех магазинах
+                                        li.geo
+                                            input.radio-elem#here(type='radio' name='geolocation')
+                                            label.radio-lable(for='here') В ближайшем ко мне магазине
                             li.accardion-item
                                 a.accardion-item-trigger(href='#') Бренды
-                                ul.accardion-item-subitems
-                                    li.accardion-item-subitems-subitem
-                                        input.checkbox-elem#lenovo(type='checkbox' name='brand')
-                                        label.checkbox-lable(for='lenovo') Lenovo
-                                    li.accardion-item-subitems-subitem
-                                        input.checkbox-elem#apple(type='checkbox' name='brand')
-                                        label.checkbox-lable(for='apple') Apple
-                                    li.accardion-item-subitems-subitem
-                                        input.checkbox-elem#samsung(type='checkbox' name='brand')
-                                        label.checkbox-lable(for='samsung') Samsung
-                                    li.accardion-item-subitems-subitem
-                                        input.checkbox-elem#asus(type='checkbox' name='brand')
-                                        label.checkbox-lable(for='asus') Asus
-                                    li.accardion-item-subitems-subitem
-                                        input.checkbox-elem#motorola(type='checkbox' name='brand')
-                                        label.checkbox-lable(for='motorola') Motorola
-                                a.reset_filter(href='#') Сбросить фильтр
+                                .accardion-item_wrap
+                                    ul.accardion-item-subitems
+                                        li.accardion-item-subitems-subitem
+                                            input.checkbox-elem#lenovo(type='checkbox' name='brand')
+                                            label.checkbox-lable(for='lenovo') Lenovo
+                                        li.accardion-item-subitems-subitem
+                                            input.checkbox-elem#apple(type='checkbox' name='brand')
+                                            label.checkbox-lable(for='apple') Apple
+                                        li.accardion-item-subitems-subitem
+                                            input.checkbox-elem#samsung(type='checkbox' name='brand')
+                                            label.checkbox-lable(for='samsung') Samsung
+                                        li.accardion-item-subitems-subitem
+                                            input.checkbox-elem#asus(type='checkbox' name='brand')
+                                            label.checkbox-lable(for='asus') Asus
+                                        li.accardion-item-subitems-subitem
+                                            input.checkbox-elem#motorola(type='checkbox' name='brand')
+                                            label.checkbox-lable(for='motorola') Motorola
+                                        li.reset_filter
+                                            a(href='#') Сбросить фильтр
 
                             li.accardion-item
                                 a.accardion-item-trigger(href='#') Цены
-                                lable.accardion-item-lable_choose
-                                    |от
-                                    input.accardion-item-from(type="text" value=100)
-                                lable.accardion-item-lable_choose
-                                    |до
-                                    input.accardion-item-to(type="text" value=5000)
+                                .accardion-item_wrap
+                                    form.slider-form
+                                        lable.accardion-item-lable_choose
+                                            |от
+                                            input.accardion-item-from(type="text")
+                                        lable.accardion-item-lable_choose
+                                            |до
+                                            input.accardion-item-to(type="text")
+                                        div(class='ui-slider-range' data-min='0' data-max='10000')
                             li.accardion-item
                                 a.accardion-item-trigger(href='#') Цвет
-                                ul.accardion-items-colorboxes
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_1
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_2
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_3
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_4
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_5
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_6
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_7
-                                    li.accardion-item-colorboxes
-                                       .colorbox.colorbox_8
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_9
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_10
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_11
-                                    li.accardion-item-colorboxes
-                                        .colorbox.colorbox_12
+                                .accardion-item_wrap
+                                    ul.accardion-items-colorboxes
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_1
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_2
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_3
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_4
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_5
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_6
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_7
+                                        li.accardion-item-colorboxes
+                                           .colorbox.colorbox_8
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_9
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_10
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_11
+                                        li.accardion-item-colorboxes
+                                            .colorbox.colorbox_12
 
                             li.accardion-item
                                 a.accardion-item-trigger(href='#') Операционная система
-                                ul.accardion-item-subitems
-                                    li.accardion-item-subitems-subitem
-                                        input.checkbox-elem#android(type='checkbox' name='operating-system')
-                                        label.checkbox-lable(for='android') Android
-                                    li.accardion-item-subitems-subitem
-                                        input.checkbox-elem#ios(type='checkbox' name='operating-system')
-                                        label.checkbox-lable(for='ios') iOS
-                                    li.accardion-item-subitems-subitem
-                                        input.checkbox-elem#win(type='checkbox' name='operating-system')
-                                        label.checkbox-lable(for='win') Windows Mobile
-                                    li.accardion-item-subitems-subitem
-                                        input.checkbox-elem#symbian(type='checkbox' name='operating-system')
-                                        label.checkbox-lable(for='symbian') Symbian
-                                    li.accardion-item-subitems-subitem
-                                        input.checkbox-elem#custom(type='checkbox' name='operating-system')
-                                        label.checkbox-lable(for='custom') Custom
-                                a.reset_filter(href='#') Сбросить фильтр
+                                .accardion-item_wrap
+                                    ul.accardion-item-subitems
+                                        li.accardion-item-subitems-subitem
+                                            input.checkbox-elem#android(type='checkbox' name='operating-system')
+                                            label.checkbox-lable(for='android') Android
+                                        li.accardion-item-subitems-subitem
+                                            input.checkbox-elem#ios(type='checkbox' name='operating-system')
+                                            label.checkbox-lable(for='ios') iOS
+                                        li.accardion-item-subitems-subitem
+                                            input.checkbox-elem#win(type='checkbox' name='operating-system')
+                                            label.checkbox-lable(for='win') Windows Mobile
+                                        li.accardion-item-subitems-subitem
+                                            input.checkbox-elem#symbian(type='checkbox' name='operating-system')
+                                            label.checkbox-lable(for='symbian') Symbian
+                                        li.accardion-item-subitems-subitem
+                                            input.checkbox-elem#custom(type='checkbox' name='operating-system')
+                                            label.checkbox-lable(for='custom') Custom
+                                        li.reset_filter
+                                            a(href='#') Сбросить фильтр
 
 
                 .content.clearfix
@@ -161,14 +170,14 @@ html(lang='ru-RU')
                             .view-span.clearfix Вид каталога
                             ul.content-view_right-items.clearfix
                                 li.content-view_right-item
-                                    .content-view_right-items-wrapperimage_1
+                                    .content-view_right-items-wrapperimage_1.view-button_1
                                 li.content-view_right-item
-                                    .content-view_right-items-wrapperimage_2
+                                    .content-view_right-items-wrapperimage_3.view-button_2
                                 li.content-view_right-item
-                                    .content-view_right-items-wrapperimage_3
+                                    .content-view_right-items-wrapperimage_2.view-button_3
                     .content-items.clearfix
-                        +device(devices)
                         include _page2
+                        +device(devices)
                         include _page1
                     .list-pages.clearfix
                         ul.list-pages-items.clearfix
@@ -210,5 +219,9 @@ html(lang='ru-RU')
                 .footer-allright
                     |All rights reserved. 2015. no copy alowed
         script(src='dist/bower/jquery/dist/jquery.js')
+        script(src='dist/bower/jquery-ui/jquery-ui.js')
+        script(src='dist/bower/select2/dist/js/select2.js')
+        script(src='js/slider-widget.js')
         script(src='dist/bower/jquery.columnizer/src/jquery.columnizer.js')
+        script(src='js/view.js')
         script(src='js/main.js')
