@@ -12,6 +12,7 @@ body{
   clear: both;
 }
 @import url(fonts/stylesheet.css);
+@import "compass";
 /*_______plugins______*/
 @import "_plugins/_jquery-ui";
 @import "_plugins/_select2";

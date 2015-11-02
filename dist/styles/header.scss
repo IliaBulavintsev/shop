@@ -23,31 +23,9 @@
 .social-items{
   display: inline-block;
   margin-right: 15px;
-  width: 26px;
-  height: 26px;
+  //width: 26px;
+  //height: 26px;
   overflow: hidden;
-}
-.social-items_vk{
-  &:hover{
-    .social-img_vk{
-      display: none;
-    }
-  }
-}
-.social-items_tw{
-  &:hover{
-    .social-img_tw{
-      display: none;
-    }
-  }
-
-}
-.social-items_fb{
-  &:hover{
-    .social-img_fb{
-      display: none;
-    }
-  }
 }
 .adress{
   padding: 0;
@@ -74,5 +52,22 @@
   color: #000000;
   &:hover{
     color: #ff6600;
+  }
+}
+
+@import "icons/*.png";
+$socials: vk , fb , tw;
+
+@each $social in $socials{
+  .social-items_#{$social} {
+    cursor: pointer;
+    @include icons-sprite(#{$social});
+    $h : icons-sprite-height(#{$social});
+    $w : icons-sprite-width(#{$social});
+    height: $h;
+    width: $w;
+    &:hover{
+     // @include icons-sprite(#{$social});
+    }
   }
 }

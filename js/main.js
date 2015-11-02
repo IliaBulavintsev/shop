@@ -80,7 +80,7 @@ var Accardeon = function(){
 }();
 
 $(function(){
-    console.log('ready');
+    //console.log('ready');
     $('.information-column').columnize({
         width : 500
        });
@@ -102,8 +102,8 @@ $(function(){
         var $this = $(this),
             container = $this.closest('.accardion-item-subitems'),
             checkboxes = container.find('input:checkbox');
-        console.log(container);
-        console.log(checkboxes);
+        //console.log(container);
+        //console.log(checkboxes);
 
         checkboxes.each(function(){
             $(this).prop('checked' , '');

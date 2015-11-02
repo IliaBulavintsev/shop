@@ -43,21 +43,6 @@
 
 .social-items_footer {
   margin-right: 26px;
-  height: 43px;
-  width: 44px;
-  overflow: hidden;
-}
-
-.social-items_footer_fb:hover .social-ico-footer_fb {
-  display: none;
-}
-
-.social-items_footer_vk:hover .social-ico-footer_vk {
-  display: none;
-}
-
-.social-items_footer_tw:hover .social-ico-footer_tw {
-  display: none;
 }
 
 .social_footer {
@@ -82,6 +67,55 @@
   color: #ff6600;
 }
 
-.social-ico-footer_tw:hover {
-  display: none;
+.icons-footer-sprite, .social-items_footer_vk-footer, .social-items_footer_vk-footer:hover, .social-items_footer_fb-footer, .social-items_footer_fb-footer:hover, .social-items_footer_tw-footer, .social-items_footer_tw-footer:hover {
+  background-image: url('../img/icons-footer-s8df3792c5d.png');
+  background-repeat: no-repeat;
+}
+
+.social-items_footer_vk-footer {
+  cursor: pointer;
+  background-position: 0 -215px;
+  height: 43px;
+  width: 43px;
+}
+.social-items_footer_vk-footer:hover, .social-items_footer_vk-footer.vk-footer-hover {
+  background-position: 0 -172px;
+}
+.social-items_footer_vk-footer:hover {
+  background-position: 0 -215px;
+}
+.social-items_footer_vk-footer:hover:hover, .social-items_footer_vk-footer:hover.vk-footer-hover {
+  background-position: 0 -172px;
+}
+
+.social-items_footer_fb-footer {
+  cursor: pointer;
+  background-position: 0 -43px;
+  height: 43px;
+  width: 43px;
+}
+.social-items_footer_fb-footer:hover, .social-items_footer_fb-footer.fb-footer-hover {
+  background-position: 0 0;
+}
+.social-items_footer_fb-footer:hover {
+  background-position: 0 -43px;
+}
+.social-items_footer_fb-footer:hover:hover, .social-items_footer_fb-footer:hover.fb-footer-hover {
+  background-position: 0 0;
+}
+
+.social-items_footer_tw-footer {
+  cursor: pointer;
+  background-position: 0 -129px;
+  height: 43px;
+  width: 43px;
+}
+.social-items_footer_tw-footer:hover, .social-items_footer_tw-footer.tw-footer-hover {
+  background-position: 0 -86px;
+}
+.social-items_footer_tw-footer:hover {
+  background-position: 0 -129px;
+}
+.social-items_footer_tw-footer:hover:hover, .social-items_footer_tw-footer:hover.tw-footer-hover {
+  background-position: 0 -86px;
 }

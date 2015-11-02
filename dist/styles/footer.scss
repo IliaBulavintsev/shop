@@ -37,31 +37,7 @@
 }
 .social-items_footer{
   margin-right: 26px;
-  height: 43px;
-  width: 44px;
-  overflow: hidden;
 }
-.social-items_footer_fb{
-  &:hover{
-    .social-ico-footer_fb{
-      display: none;
-    }
-  }
-}
-.social-items_footer_vk{
-  &:hover{
-    .social-ico-footer_vk{
-      display: none;
-    }
-  }
-}
-.social-items_footer_tw{
-   &:hover{
-     .social-ico-footer_tw{
-       display: none;
-     }
-   }
- }
 .social_footer{
   margin-bottom: 33px;
 }
@@ -81,15 +57,21 @@
     color: #ff6600;
   }
 }
-.social-ico-footer_fb{
 
 
-}
-.social-ico-footer_vk{
+@import "icons-footer/*.png";
+$socials-footer : vk-footer, fb-footer, tw-footer;
 
-}
-.social-ico-footer_tw{
-  &:hover{
-    display: none;
+@each $social-footer in $socials-footer{
+  .social-items_footer_#{$social-footer} {
+    cursor: pointer;
+    @include icons-footer-sprite(#{$social-footer});
+    $h : icons-footer-sprite-height(#{$social-footer});
+    $w : icons-footer-sprite-width(#{$social-footer});
+    height: $h;
+    width: $w;
+    &:hover{
+      @include icons-footer-sprite(#{$social-footer});
+    }
   }
 }

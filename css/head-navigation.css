@@ -15,6 +15,9 @@
   height: 36px;
   margin: 0;
   text-indent: 10px;
+  outline-style: none;
+  font-family: 'OpenSans';
+  font-size: 14px;
 }
 
 .navigation-head-search-button {
