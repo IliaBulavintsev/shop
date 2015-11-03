@@ -3583,6 +3583,7 @@ body .ui-tooltip {
 .page2-items-coloms {
   padding: 0;
   padding-top: 19px;
+  position: relative;
 }
 
 .pages2-items-item_leftcol {
@@ -3662,9 +3663,12 @@ body .ui-tooltip {
 }
 
 .pages2-items-item_rightcol {
-  position: relative;
+  position: absolute;
   text-align: right;
-  padding-left: 24px;
+  padding-left: 78px;
+  right: 24px;
+  top: 23px;
+  bottom: 23px;
   border-left: 1px solid #dee1e4;
 }
 
@@ -3675,6 +3679,9 @@ body .ui-tooltip {
 }
 
 .page2-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   border-radius: 5px;
   background-image: -moz-linear-gradient(56deg, #ff6600 0%, #ff6a1b 45%, #ff6e35 99%);
   background-image: -webkit-linear-gradient(56deg, #ff6600 0%, #ff6a1b 45%, #ff6e35 99%);
@@ -3684,7 +3691,7 @@ body .ui-tooltip {
   border: 0;
   outline-style: none;
   color: #FFFFFF;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
   font-family: "OpenSans-Semi";
   font-size: 14px;
 }
@@ -3696,10 +3703,12 @@ body .ui-tooltip {
 }
 
 .page2-status {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   font-family: "OpenSans-Semi";
   font-size: 12px;
   color: #7f7f7f;
-  position: relative;
 }
 .page2-status:before {
   position: absolute;
@@ -3711,7 +3720,7 @@ body .ui-tooltip {
   width: 7px;
   height: 7px;
   top: 6px;
-  left: 25px;
+  left: -25px;
 }
 
 .page2-img-main {

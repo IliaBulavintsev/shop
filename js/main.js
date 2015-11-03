@@ -68,9 +68,12 @@ var Accardeon = function(){
 }();
 
 $(function(){
-    $('.information-column').columnize({
-        width : 500
-       });
+    if ($('.information-column').length){
+
+        $('.information-column').columnize({
+            width: 500
+        });
+    }
     $('a').on('click', function(e){
         e.preventDefault();
     });
